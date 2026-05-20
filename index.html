@@ -1,0 +1,1961 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Roteiro Playa del Carmen / Cancún 2026 — v11 HTML/CSS Completo</title><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=zClyr8rXnD-5sDTcAPpvXQhhLfMYi7AfcSI0DQUkrSo7_JG0oOipNGfvGaowAyraKe-374bX9CaDp2NBTCe9uQ_PJAa62foKeCGFiZg0JjGbJgxg6THyiHT8HY2-mnlvB5mXfolLn4h8Nj57rQ_77Hxp__2B_ny2XbWxeocZJFLoso56zzlR4-paAQKakKMLE1KURXaPHKvwgQ7TLuOa7YTFMF2LizMt5qhhEgLZot-8IFiixy85bPVs1ikSkEzvQZjgFMOI9L3dyFYlhql_XQ" charset="UTF-8"></script><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=oridAqJMMlldhMSKb3VBueBv9pCVL9VXzrxfRPZxOpy_lz19ZxnU2_xRUMch7hRNEPuDD_e7Zc1lBAL89uuMs_ZynSMUjvQuNmel9bkqcfcNSsk0gtb1J5Ca0O3Whj6IcLgBfyJqdA2_YIggBXPWVw4F3qipxzbjZkJG0snbJk0Nu2poXcZnRb_wk7B8Uzmmi5ldM-Uppcu341WFVeWjLVh6EGMspaomOf7-8K1_sgw4Kdt-vU5eGNT5MrZ4v8DliM7VwWzeNivibudMCQGiJg" charset="UTF-8"></script><style>
+:root{--purple:#6D28D9;--purple-dark:#1E1B4B;--green:#0F766E;--green-soft:#ECFDF5;--blue:#2563EB;--text:#0F172A;--line:#CBD5E1}
+*{box-sizing:border-box} body{margin:0;background:#e5e7eb;color:var(--text);font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.35}
+a{color:var(--blue);font-weight:700;text-decoration:none}.page{width:210mm;min-height:297mm;margin:18px auto;padding:16mm 14mm;background:#fff;box-shadow:0 2px 10px rgba(15,23,42,.13);page-break-after:always}.page:last-child{page-break-after:auto}
+h1{margin:0 0 14px;text-align:center;color:var(--purple-dark);font-size:24px;line-height:1.2}h2{margin:14px 0 9px;color:var(--purple);font-size:18px;line-height:1.2}h3{margin:8px 0 5px;color:var(--purple);font-size:14px}
+p{margin:5px 0}.intro{background:#EEF2FF;border:1px solid #C4B5FD;padding:10px 12px;margin-bottom:12px}.card{border:1px solid #E2E8F0;background:#FAFAFA;padding:8px 10px;margin:7px 0}.card-title{font-weight:700;margin-bottom:3px}
+table{width:100%;border-collapse:collapse;table-layout:fixed;margin:7px 0 10px}th{background:var(--green);color:#fff;padding:6px 7px;border:1px solid var(--green);text-align:left;font-weight:700}td{padding:6px 7px;border:1px solid var(--line);vertical-align:top}tbody tr:nth-child(even) td{background:var(--green-soft)}
+.flight th{background:#4F46E5;border-color:#4F46E5}.purple-table th{background:var(--purple);border-color:var(--purple)}.orange-table th{background:var(--purple);border-color:var(--purple)}.small{font-size:11px}.cost td{font-size:11px}.cost th{font-size:11.5px}
+.maps{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:6px 0 3px}.maplink{border:1px solid #DBEAFE;background:#F8FBFF;padding:5px 6px;font-size:10.5px;line-height:1.2}
+@page{size:A4;margin:0}@media print{body{background:#fff}.page{margin:0;box-shadow:none;width:210mm;min-height:297mm;padding:16mm 14mm}a{color:var(--blue)!important}}
+
+.card ul{margin:5px 0 6px 17px;padding:0}
+.card li{margin:2px 0}
+
+/* Page-break safeguards */
+section.page { break-after: page; page-break-after: always; overflow: hidden; }
+section.page:last-of-type { break-after: auto; page-break-after: auto; }
+table, tr, td, th, .card { break-inside: avoid; page-break-inside: avoid; }
+
+section.page{
+  page-break-after: always;
+  break-after: page;
+  overflow: visible;
+}
+section.page:last-of-type{
+  page-break-after:auto;
+  break-after:auto;
+}
+table, tr, td, th, .card{
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* Unified visual palette */
+.unified-palette{}
+.orange-table th,.purple-table th{background:var(--purple)!important;border-color:var(--purple)!important}
+.flight th{background:var(--purple-dark)!important;border-color:var(--purple-dark)!important}
+table{margin-left:0!important;margin-right:0!important}
+.page > h2, .page > h3, .page > p, .page > table, .page > .card{max-width:100%}
+.maps{max-width:100%}
+
+/* Unified Purple Palette */
+:root{
+  --primary:#6D28D9;
+  --primary-dark:#4C1D95;
+  --primary-soft:#F5F3FF;
+  --border:#DDD6FE;
+}
+
+table{
+  border-collapse:collapse;
+}
+
+table th,
+.purple-table th,
+.orange-table th,
+.green-table th,
+.flight th{
+  background:var(--primary)!important;
+  color:#fff!important;
+  border-color:var(--primary-dark)!important;
+}
+
+table td{
+  border-color:var(--border)!important;
+}
+
+h2,h3{
+  color:var(--primary-dark)!important;
+}
+
+a{
+  color:#5B21B6;
+}
+
+/* Quando houver 4 links, mantém todos alinhados no mesmo padrão visual sem quebrar a página */
+.maps:has(.maplink:nth-child(4)){
+  grid-template-columns:repeat(4,1fr)!important;
+}
+
+@media print{
+  .maps{
+    display:grid!important;
+    grid-template-columns:repeat(3,1fr)!important;
+    gap:6px!important;
+  }
+  .maps:has(.maplink:nth-child(4)){
+    grid-template-columns:repeat(4,1fr)!important;
+  }
+  .maplink{
+    font-size:10px!important;
+    min-height:30px!important;
+  }
+}
+
+/* Google Maps route links — layout reforçado */
+.maps{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:6px!important;
+  margin:6px 0 4px!important;
+  width:100%!important;
+  align-items:stretch!important;
+}
+
+.maplink{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  width:100%!important;
+  box-sizing:border-box!important;
+  border:1px solid #DBEAFE!important;
+  background:#F8FBFF!important;
+  padding:6px 7px!important;
+  font-size:10.5px!important;
+  line-height:1.2!important;
+  min-height:34px!important;
+  text-align:left!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  color:var(--blue)!important;
+  font-weight:700!important;
+  text-decoration:none!important;
+  white-space:normal!important;
+  overflow-wrap:break-word!important;
+}
+
+@media print{
+  .maps{
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:6px!important;
+  }
+
+  .maplink{
+    font-size:10px!important;
+    min-height:30px!important;
+  }
+}
+
+/* Google Maps route links — versão fixa em tabela */
+.route-table{
+  width:100%!important;
+  border-collapse:separate!important;
+  border-spacing:6px 0!important;
+  margin:6px 0 4px!important;
+  table-layout:fixed!important;
+}
+.route-table td{
+  width:33.333%!important;
+  border:none!important;
+  padding:0!important;
+  background:transparent!important;
+}
+.route-table a{
+  display:block!important;
+  width:100%!important;
+  box-sizing:border-box!important;
+  border:1px solid #DBEAFE!important;
+  background:#F8FBFF!important;
+  padding:6px 7px!important;
+  font-size:10.5px!important;
+  line-height:1.2!important;
+  min-height:34px!important;
+  color:var(--blue)!important;
+  font-weight:700!important;
+  text-decoration:none!important;
+  text-align:left!important;
+}
+
+.summary-badge{background:#F5F3FF;border:1px solid #DDD6FE;padding:8px}
+
+/* Compactação premium — Cidade do México + blocos expansíveis */
+.compact-cdmx details.day-block{margin:5px 0!important}
+.compact-cdmx details.day-block summary{padding:6px 8px!important}
+.compact-cdmx details.day-block .inside{padding:7px 8px!important}
+.compact-cdmx ul{margin:4px 0 5px 16px!important}
+.compact-cdmx li{margin:1px 0!important}
+.compact-cdmx table{margin:5px 0 7px!important}
+.compact-cdmx th,.compact-cdmx td{padding:5px 6px!important}
+.compact-cdmx .maps,.compact-cdmx .route-table{margin:4px 0 3px!important}
+.compact-cdmx .maplink,.compact-cdmx .route-table a{min-height:28px!important;padding:5px 6px!important;font-size:10px!important}
+.compact-cdmx h2{margin-top:10px!important;margin-bottom:7px!important}
+.compact-cdmx p{margin:4px 0!important}
+@media print{
+  .compact-cdmx details.day-block{margin:4px 0!important}
+  .compact-cdmx details.day-block summary{padding:5px 7px!important}
+  .compact-cdmx details.day-block .inside{padding:6px 7px!important}
+}
+
+/* Compactação hotéis + restaurantes */
+.food-table{
+  margin-top:6px!important;
+  margin-bottom:10px!important;
+}
+.food-table th,
+.food-table td{
+  padding:6px 7px!important;
+  font-size:11px!important;
+  line-height:1.3!important;
+}
+h2 + .food-table{
+  margin-top:5px!important;
+}
+
+/* Blocos expansíveis — visual premium neutro */
+details.day-block,
+details.info-block{
+  border:1px solid #E5E7EB!important;
+  background:#FFFFFF!important;
+  margin:7px 0!important;
+  padding:0!important;
+  border-radius:10px!important;
+  overflow:hidden!important;
+  box-shadow:0 1px 2px rgba(15,23,42,.04)!important;
+}
+
+details.day-block summary,
+details.info-block summary{
+  cursor:pointer!important;
+  list-style:none!important;
+  background:#F8FAFC!important;
+  color:#111827!important;
+  font-weight:700!important;
+  padding:7px 10px!important;
+  border-bottom:1px solid #E5E7EB!important;
+  line-height:1.25!important;
+}
+
+details.day-block summary:hover,
+details.info-block summary:hover{
+  background:#F3F4F6!important;
+}
+
+details.day-block summary *,
+details.info-block summary *{
+  color:#111827!important;
+  background:transparent!important;
+  font-weight:700!important;
+}
+
+details.day-block summary a,
+details.info-block summary a{
+  color:#111827!important;
+  text-decoration:none!important;
+}
+
+details.day-block summary::-webkit-details-marker,
+details.info-block summary::-webkit-details-marker{
+  display:none!important;
+}
+
+details.day-block summary::before,
+details.info-block summary::before{
+  content:"›"!important;
+  display:inline-block!important;
+  color:#6B7280!important;
+  font-size:14px!important;
+  font-weight:700!important;
+  margin-right:6px!important;
+  transform:translateY(-1px)!important;
+}
+
+details.day-block[open] summary::before,
+details.info-block[open] summary::before{
+  transform:rotate(90deg) translateX(-1px)!important;
+}
+
+details.day-block summary::after,
+details.info-block summary::after{
+  content:""!important;
+}
+
+details.day-block[open] summary,
+details.info-block[open] summary{
+  background:#F3F4F6!important;
+  color:#111827!important;
+}
+
+details.day-block .inside,
+details.info-block .inside{
+  padding:8px 10px!important;
+  background:#FFFFFF!important;
+}
+
+/* Compactação controlada — Cancún com hotéis/restaurantes na mesma página */
+.compact-cancun h2{
+  margin-top:10px!important;
+  margin-bottom:7px!important;
+}
+.compact-cancun table{
+  margin:5px 0 8px!important;
+}
+.compact-cancun th,
+.compact-cancun td{
+  padding:5px 6px!important;
+  font-size:10.8px!important;
+  line-height:1.28!important;
+}
+.compact-cancun details.day-block{
+  margin:5px 0!important;
+}
+.compact-cancun details.day-block summary{
+  padding:6px 8px!important;
+}
+.compact-cancun details.day-block .inside{
+  padding:7px 8px!important;
+}
+.compact-cancun .route-table{
+  margin:4px 0 3px!important;
+}
+.compact-cancun .route-table a{
+  min-height:28px!important;
+  padding:5px 6px!important;
+  font-size:10px!important;
+}
+
+/* Tabelas — paleta premium unificada */
+table,
+.purple-table,
+.food-table{
+  border-collapse:collapse!important;
+  width:100%!important;
+  background:#FFFFFF!important;
+}
+
+table th,
+.purple-table th,
+.food-table th{
+  background:#374151!important;
+  color:#F9FAFB!important;
+  border:1px solid #D1D5DB!important;
+  padding:7px 9px!important;
+  text-align:left!important;
+  font-weight:700!important;
+}
+
+table td,
+.purple-table td,
+.food-table td{
+  background:#FFFFFF!important;
+  color:#111827!important;
+  border:1px solid #E5E7EB!important;
+  padding:7px 9px!important;
+  vertical-align:top!important;
+}
+
+table tbody tr:nth-child(even) td,
+.purple-table tbody tr:nth-child(even) td,
+.food-table tbody tr:nth-child(even) td{
+  background:#F8FAFC!important;
+}
+
+table tbody tr:hover td,
+.purple-table tbody tr:hover td,
+.food-table tbody tr:hover td{
+  background:#F3F4F6!important;
+}
+
+table a,
+.purple-table a,
+.food-table a{
+  color:#1F2937!important;
+}
+
+/* Padronização final — tabela de voos */
+.flight-table th,
+.voos-table th,
+table th{
+  background:#374151!important;
+  color:#F9FAFB!important;
+  border:1px solid #D1D5DB!important;
+}
+
+.flight-table td,
+.voos-table td,
+table td{
+  border:1px solid #E5E7EB!important;
+}
+
+/* Compactação seções 8 e 9 */
+.section-89-compact{
+  page-break-inside:avoid!important;
+}
+
+.section-89-compact h2{
+  margin-top:10px!important;
+  margin-bottom:6px!important;
+}
+
+.section-89-compact table{
+  margin-top:5px!important;
+  margin-bottom:8px!important;
+}
+
+.section-89-compact td,
+.section-89-compact th{
+  padding:5px 6px!important;
+  font-size:10.8px!important;
+}
+
+/* Correção estrutural — seção compras */
+.shopping-section,
+.section-shopping{
+  clear:both!important;
+  overflow:visible!important;
+  page-break-inside:auto!important;
+}
+
+.shopping-section table,
+.section-shopping table{
+  width:100%!important;
+  table-layout:fixed!important;
+  margin:10px 0 14px!important;
+  border-collapse:collapse!important;
+}
+
+.shopping-section h2,
+.section-shopping h2{
+  margin-top:14px!important;
+  margin-bottom:8px!important;
+  line-height:1.25!important;
+}
+
+.shopping-section td,
+.shopping-section th,
+.section-shopping td,
+.section-shopping th{
+  padding:7px 8px!important;
+  vertical-align:top!important;
+  word-break:break-word!important;
+  overflow-wrap:break-word!important;
+}
+
+.shopping-section .card,
+.section-shopping .card{
+  margin:10px 0!important;
+  padding:10px 12px!important;
+}
+
+/* Correção estrutural definitiva — seção 6.3 */
+.shopping-clean-page{
+  width:210mm!important;
+  min-height:297mm!important;
+  margin:18px auto!important;
+  padding:16mm 14mm!important;
+  background:#FFFFFF!important;
+  box-sizing:border-box!important;
+  overflow:visible!important;
+  clear:both!important;
+  page-break-after:always!important;
+  break-after:page!important;
+}
+
+.shopping-clean-page h2{
+  margin:13px 0 8px!important;
+  padding:0!important;
+  line-height:1.25!important;
+  clear:both!important;
+}
+
+.shopping-clean-page h2:first-child{
+  margin-top:0!important;
+}
+
+.shopping-table{
+  width:100%!important;
+  border-collapse:collapse!important;
+  table-layout:fixed!important;
+  margin:8px 0 15px!important;
+  clear:both!important;
+}
+
+.shopping-table th{
+  background:#374151!important;
+  color:#F9FAFB!important;
+  border:1px solid #D1D5DB!important;
+  padding:7px 8px!important;
+  text-align:left!important;
+  font-size:11px!important;
+  line-height:1.3!important;
+}
+
+.shopping-table td{
+  background:#FFFFFF!important;
+  color:#111827!important;
+  border:1px solid #E5E7EB!important;
+  padding:7px 8px!important;
+  vertical-align:top!important;
+  font-size:11px!important;
+  line-height:1.38!important;
+  word-break:break-word!important;
+  overflow-wrap:break-word!important;
+}
+
+.shopping-table tbody tr:nth-child(even) td{
+  background:#F8FAFC!important;
+}
+
+.shopping-card{
+  border:1px solid #E5E7EB!important;
+  background:#F9FAFB!important;
+  padding:10px 12px!important;
+  margin:10px 0 15px!important;
+  border-radius:8px!important;
+  line-height:1.45!important;
+  clear:both!important;
+}
+
+.shopping-card ul{
+  margin:8px 0 0 18px!important;
+  padding:0!important;
+}
+
+.shopping-card li{
+  margin:4px 0!important;
+}
+
+/* Compactação final seções 8, 9 e 10 */
+.compact-final-section{
+  page-break-inside:auto!important;
+  break-inside:auto!important;
+}
+
+.compact-final-section h2{
+  margin-top:10px!important;
+  margin-bottom:6px!important;
+  line-height:1.2!important;
+}
+
+.compact-final-section table{
+  margin-top:5px!important;
+  margin-bottom:8px!important;
+}
+
+.compact-final-section th,
+.compact-final-section td{
+  padding:5px 6px!important;
+  font-size:10.5px!important;
+  line-height:1.25!important;
+}
+
+.compact-final-section ul,
+.compact-final-section ol{
+  margin-top:5px!important;
+  margin-bottom:5px!important;
+}
+
+.compact-final-section li{
+  margin:2px 0!important;
+}
+
+.compact-final-section .card,
+.compact-final-section .shopping-card{
+  margin:8px 0!important;
+  padding:8px 10px!important;
+}
+
+/* Checklist inteligente clicável */
+.check-table{
+  width:100%!important;
+  border-collapse:collapse!important;
+  table-layout:fixed!important;
+  margin:6px 0 8px!important;
+}
+
+.check-table th{
+  background:#374151!important;
+  color:#F9FAFB!important;
+  border:1px solid #D1D5DB!important;
+  padding:6px 7px!important;
+}
+
+.check-table td{
+  border:1px solid #E5E7EB!important;
+  background:#FFFFFF!important;
+  padding:6px 7px!important;
+  vertical-align:top!important;
+}
+
+.check-table tbody tr:nth-child(even) td{
+  background:#F8FAFC!important;
+}
+
+.smart-check{
+  display:inline-flex;
+  align-items:flex-start;
+  gap:5px;
+  margin:2px 10px 2px 0;
+  line-height:1.25;
+  font-size:10.5px;
+}
+
+.smart-check input{
+  width:13px;
+  height:13px;
+  margin-top:1px;
+  accent-color:#374151;
+}
+
+/* Correção final — cabeçalho da tabela de voos na paleta premium */
+.flight th,
+.flight-table th,
+.voos-table th{
+  background:#374151!important;
+  color:#F9FAFB!important;
+  border:1px solid #D1D5DB!important;
+}
+.flight td,
+.flight-table td,
+.voos-table td{
+  border:1px solid #E5E7EB!important;
+}
+
+/* Compactação controlada — Playa del Carmen com 4.1 e 4.2 na mesma página */
+.compact-playa h2{
+  margin-top:10px!important;
+  margin-bottom:7px!important;
+}
+.compact-playa table{
+  margin:5px 0 8px!important;
+}
+.compact-playa th,
+.compact-playa td{
+  padding:5px 6px!important;
+  font-size:10.6px!important;
+  line-height:1.25!important;
+}
+.compact-playa details.day-block{
+  margin:5px 0!important;
+}
+.compact-playa details.day-block summary{
+  padding:6px 8px!important;
+}
+.compact-playa details.day-block .inside{
+  padding:7px 8px!important;
+}
+.compact-playa .route-table{
+  margin:4px 0 3px!important;
+}
+.compact-playa .route-table a{
+  min-height:28px!important;
+  padding:5px 6px!important;
+  font-size:10px!important;
+}
+
+/* Compactação controlada — seção 6 custos */
+.costs-compact h2{
+  margin-top:10px!important;
+  margin-bottom:6px!important;
+}
+.costs-compact table{
+  margin:5px 0 8px!important;
+}
+.costs-compact th,
+.costs-compact td{
+  padding:5px 6px!important;
+  font-size:10.5px!important;
+  line-height:1.25!important;
+}
+
+/* Painel Vivo / Dashboard dinâmico */
+.live-dashboard{
+  border:1px solid #E5E7EB!important;
+  background:#F9FAFB!important;
+  padding:12px!important;
+  border-radius:10px!important;
+  margin:10px 0 14px!important;
+}
+.live-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,1fr)!important;
+  gap:8px!important;
+  margin:8px 0!important;
+}
+.live-card{
+  background:#FFFFFF!important;
+  border:1px solid #E5E7EB!important;
+  padding:9px!important;
+  border-radius:9px!important;
+  min-height:70px!important;
+}
+.live-card strong{display:block;margin-bottom:4px;color:#111827!important}
+.live-actions{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  gap:8px!important;
+  margin-top:10px!important;
+}
+.live-actions a{
+  border:1px solid #D1D5DB!important;
+  background:#FFFFFF!important;
+  color:#111827!important;
+  padding:7px 10px!important;
+  border-radius:8px!important;
+  text-decoration:none!important;
+  font-weight:700!important;
+}
+.sheet-embed{
+  width:100%!important;
+  min-height:420px!important;
+  border:1px solid #D1D5DB!important;
+  border-radius:10px!important;
+  background:#FFFFFF!important;
+}
+@media print{
+  .sheet-embed{min-height:220px!important}
+  .live-grid{grid-template-columns:repeat(3,1fr)!important}
+}
+
+/* ================= PAINEL VIVO FUNCIONAL ================= */
+:root{
+  --dyn-dark:#111827;
+  --dyn-mid:#374151;
+  --dyn-line:#E5E7EB;
+  --dyn-soft:#F8FAFC;
+  --dyn-green:#16A34A;
+  --dyn-yellow:#D97706;
+  --dyn-red:#DC2626;
+  --dyn-blue:#2563EB;
+}
+.live-dashboard-functional{
+  font-size:12px;
+}
+.live-hero{
+  border:1px solid var(--dyn-line);
+  background:linear-gradient(135deg,#F8FAFC,#EEF2FF);
+  padding:12px;
+  border-radius:12px;
+  margin-bottom:12px;
+}
+.live-kpis{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:8px;
+  margin:10px 0;
+}
+.kpi{
+  background:#fff;
+  border:1px solid var(--dyn-line);
+  border-radius:10px;
+  padding:10px;
+}
+.kpi span{
+  display:block;
+  font-size:10px;
+  color:#6B7280;
+  text-transform:uppercase;
+  font-weight:700;
+}
+.kpi strong{
+  display:block;
+  margin-top:4px;
+  font-size:16px;
+  color:#111827;
+}
+.live-tabs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin:10px 0;
+}
+.live-tab{
+  border:1px solid #D1D5DB;
+  background:#fff;
+  padding:7px 10px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:700;
+}
+.live-tab.active{
+  background:#374151;
+  color:#fff;
+}
+.live-panel{
+  display:none;
+  border:1px solid var(--dyn-line);
+  background:#fff;
+  border-radius:10px;
+  padding:10px;
+  margin-top:8px;
+}
+.live-panel.active{display:block;}
+.live-table{
+  width:100%;
+  border-collapse:collapse;
+  table-layout:fixed;
+}
+.live-table th{
+  background:#374151!important;
+  color:#fff!important;
+  padding:7px;
+  border:1px solid #D1D5DB;
+}
+.live-table td{
+  padding:6px;
+  border:1px solid #E5E7EB;
+  background:#fff!important;
+}
+.live-table input,.live-table select{
+  width:100%;
+  border:1px solid #D1D5DB;
+  border-radius:6px;
+  padding:5px;
+  font-size:11px;
+  background:#fff;
+}
+.live-mini-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+}
+.smart-card{
+  border:1px solid #E5E7EB;
+  border-radius:12px;
+  overflow:hidden;
+  background:#fff;
+  margin:8px 0;
+}
+.smart-card summary{
+  background:#F8FAFC!important;
+  color:#111827!important;
+  padding:9px 10px!important;
+  font-weight:800!important;
+  cursor:pointer;
+}
+.smart-card .smart-body{
+  padding:10px;
+}
+.badge{
+  display:inline-block;
+  padding:3px 7px;
+  border-radius:999px;
+  font-size:10px;
+  font-weight:800;
+  border:1px solid #D1D5DB;
+  background:#F9FAFB;
+}
+.badge-ok{background:#DCFCE7;border-color:#86EFAC;color:#166534}
+.badge-warn{background:#FEF3C7;border-color:#FCD34D;color:#92400E}
+.badge-pend{background:#F3F4F6;border-color:#D1D5DB;color:#374151}
+.current-day-highlight{
+  outline:3px solid #2563EB!important;
+  box-shadow:0 0 0 4px rgba(37,99,235,.14)!important;
+}
+.travel-now-banner{
+  border:1px solid #BFDBFE;
+  background:#EFF6FF;
+  padding:10px;
+  border-radius:10px;
+  margin:8px 0;
+}
+.chart-wrap{
+  border:1px solid #E5E7EB;
+  border-radius:10px;
+  background:#fff;
+  padding:10px;
+  margin:8px 0;
+}
+.bar{
+  height:18px;
+  background:#E5E7EB;
+  border-radius:999px;
+  overflow:hidden;
+  margin:5px 0 8px;
+}
+.bar > div{
+  height:100%;
+  background:#374151;
+  width:0%;
+}
+.qr-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+}
+.qr-card{
+  border:1px solid #E5E7EB;
+  border-radius:10px;
+  padding:8px;
+  text-align:center;
+}
+.qr-card img{
+  width:110px;
+  height:110px;
+  object-fit:contain;
+}
+.status-pill{
+  font-size:10px;
+  font-weight:800;
+  padding:2px 6px;
+  border-radius:999px;
+  background:#F3F4F6;
+}
+@media print{
+  .live-tab{display:none}
+  .live-panel{display:block!important}
+  .live-kpis{grid-template-columns:repeat(4,1fr)}
+  .qr-card img{width:80px;height:80px}
+}
+
+
+/* ===== PAINEL VIVO V2 — autocontido e visível mesmo sem JS ===== */
+.live-v2{font-size:12px}
+.live-v2 .panel-box{border:1px solid #E5E7EB;background:#F8FAFC;padding:10px;border-radius:10px;margin:8px 0}
+.live-v2 .kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:8px 0}
+.live-v2 .kpi{background:white;border:1px solid #E5E7EB;border-radius:10px;padding:9px}
+.live-v2 .kpi span{display:block;font-size:10px;color:#6B7280;font-weight:700;text-transform:uppercase}
+.live-v2 .kpi strong{display:block;margin-top:3px;font-size:15px;color:#111827}
+.live-v2 table input,.live-v2 table select{width:100%;padding:4px;border:1px solid #D1D5DB;border-radius:5px;background:white;font-size:10.5px}
+.live-v2 .live-section{border:1px solid #E5E7EB;border-radius:10px;background:white;margin:10px 0;padding:10px}
+.live-v2 .bar{height:16px;background:#E5E7EB;border-radius:999px;overflow:hidden;margin:5px 0}
+.live-v2 .bar div{height:100%;width:0%;background:#374151}
+.live-v2 .action-row{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.live-v2 button,.live-v2 .action-row a{border:1px solid #D1D5DB;background:#fff;color:#111827;padding:6px 9px;border-radius:8px;font-weight:700;text-decoration:none;cursor:pointer}
+.live-v2 iframe{width:100%;min-height:360px;border:1px solid #D1D5DB;border-radius:10px;background:#fff}
+.smart-card-v2{border:1px solid #E5E7EB;border-radius:10px;background:#fff;margin:7px 0;overflow:hidden}
+.smart-card-v2 summary{background:#F8FAFC!important;color:#111827!important;font-weight:800!important;padding:8px 10px!important;cursor:pointer}
+.smart-card-v2 div{padding:9px}
+.current-day-highlight{outline:3px solid #2563EB!important;box-shadow:0 0 0 4px rgba(37,99,235,.14)!important}
+@media print{.live-v2 .kpi-grid{grid-template-columns:repeat(4,1fr)}.live-v2 iframe{min-height:160px}}
+
+</style>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#374151">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Roteiro Cancún 2026">
+
+</head><body><section class="page">
+<h1>RESUMO DA VIAGEM</h1>
+
+<table class="purple-table small">
+<thead>
+<tr>
+<th style="width:22%">Bloco</th>
+<th style="width:18%">Datas</th>
+<th style="width:22%">Base</th>
+<th>Objetivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Playa del Carmen</td>
+<td>06–11/06</td>
+<td>Quinta Avenida</td>
+<td>Xcaret, Cozumel, Tulum, cenotes e Quinta Avenida.</td>
+</tr>
+
+<tr>
+<td>Cancún</td>
+<td>11–16/06</td>
+<td>Zona Hoteleira</td>
+<td>Isla Mujeres, marina, lancha transparente, Walmart e logística final.</td>
+</tr>
+</tbody>
+</table>
+
+<div class="card">
+<div class="card-title">Estratégia geral</div>
+<ul>
+<li>Cancún apenas nos últimos dias para otimizar eficiência logística nos dias finais.</li>
+<li>Evitar resort all inclusive para maximizar custo-benefício.</li>
+</ul>
+</div>
+
+<h3>Impacto no roteiro</h3>
+<table class="small">
+<thead>
+<tr><th style="width:26%">Atividade</th><th style="width:24%">Base recomendada</th><th>Motivo</th></tr>
+</thead>
+<tbody>
+<tr><td><a href="https://www.google.com/maps/search/Isla+Mujeres" target="_blank">Isla Mujeres</a></td><td>Cancún</td><td>Puerto Juárez fica muito mais próximo.</td></tr>
+<tr><td><a href="https://transparentboattours.com/en/clear-boat-tours/" target="_blank">Lancha transparente</a></td><td>Cancún</td><td>Saída mais prática pelas marinas.</td></tr>
+<tr><td><a href="https://www.xcaret.com/pt/" target="_blank">Xcaret</a> / <a href="https://www.xplor.travel/pt/" target="_blank">Xplor</a></td><td>Playa del Carmen</td><td>Parques mais próximos.</td></tr>
+<tr><td><a href="https://www.google.com/maps/search/Cozumel" target="_blank">Cozumel</a></td><td>Playa del Carmen</td><td>Ferry direto.</td></tr>
+<tr><td><a href="https://www.google.com/maps/search/Tulum+cenotes" target="_blank">Tulum / Cenotes</a></td><td>Playa del Carmen</td><td>Menor deslocamento.</td></tr>
+<tr><td><a href="https://www.google.com/maps/search/Cancun+International+Airport" target="_blank">Retorno ao aeroporto</a></td><td>Cancún</td><td>Menos stress no último dia.</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="page live-v2" id="painel-vivo">
+<h1>PAINEL VIVO DA VIAGEM</h1>
+<div class="panel-box">
+<p><b>Agora é autocontido:</b> o painel já aparece preenchido no HTML e recalcula no navegador. Ele salva alterações localmente no seu aparelho. Para Google Sheets em tempo real, cole o link publicado no campo da seção Sheets.</p>
+<div id="travelNow" class="panel-box">Modo viagem carregando...</div>
+<div class="kpi-grid">
+<div class="kpi"><span>Total mín.</span><strong id="kpiMin">—</strong></div>
+<div class="kpi"><span>Total máx.</span><strong id="kpiMax">—</strong></div>
+<div class="kpi"><span>Total real</span><strong id="kpiReal">—</strong></div>
+<div class="kpi"><span>Checklist</span><strong id="kpiChecklist">—</strong></div>
+</div>
+<div class="bar"><div id="budgetBar"></div></div>
+<p id="budgetText" class="small">—</p>
+</div>
+
+<div class="live-section">
+<h2>Custos vivos</h2>
+<table class="shopping-table" id="costTable"><thead><tr><th>Categoria</th><th>Item</th><th>Mín.</th><th>Máx.</th><th>Real</th><th>Status</th></tr></thead><tbody><tr><td>Voos</td><td>GRU → CUN via Panamá</td><td><input class="min" type="number" value="3500"></td><td><input class="max" type="number" value="4000"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
+<tr><td>Hotel</td><td>Playa 06–11/06</td><td><input class="min" type="number" value="3500"></td><td><input class="max" type="number" value="6000"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
+<tr><td>Hotel</td><td>Cancún 11–16/06</td><td><input class="min" type="number" value="2100"></td><td><input class="max" type="number" value="3200"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
+<tr><td>Passeio</td><td>Xcaret</td><td><input class="min" type="number" value="600"></td><td><input class="max" type="number" value="950"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
+<tr><td>Passeio</td><td>Cozumel + snorkel</td><td><input class="min" type="number" value="700"></td><td><input class="max" type="number" value="1200"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
+<tr><td>Passeio</td><td>Catamarã Isla Mujeres</td><td><input class="min" type="number" value="300"></td><td><input class="max" type="number" value="680"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
+<tr><td>Passeio</td><td>Ferry Isla Mujeres</td><td><input class="min" type="number" value="80"></td><td><input class="max" type="number" value="160"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
+<tr><td>Passeio</td><td>Lancha transparente</td><td><input class="min" type="number" value="140"></td><td><input class="max" type="number" value="260"></td><td><input class="real" type="number" value=""></td><td><select><option >Pendente</option><option >Reservado</option><option >Pago</option><option selected>Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
+<tr><td>Passeio</td><td>Coco Bongo</td><td><input class="min" type="number" value="400"></td><td><input class="max" type="number" value="680"></td><td><input class="real" type="number" value=""></td><td><select><option >Pendente</option><option >Reservado</option><option >Pago</option><option selected>Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
+<tr><td>Compras</td><td>Walmart/snacks/farmácia</td><td><input class="min" type="number" value="800"></td><td><input class="max" type="number" value="1800"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
+<tr><td>Alimentação</td><td>Restaurantes e lanches</td><td><input class="min" type="number" value="1500"></td><td><input class="max" type="number" value="3000"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
+<tr><td>Transporte</td><td>Uber/ADO/transfer</td><td><input class="min" type="number" value="700"></td><td><input class="max" type="number" value="1500"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
+<tr><td>Reserva</td><td>Margem/emergência</td><td><input class="min" type="number" value="1000"></td><td><input class="max" type="number" value="2500"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr></tbody></table>
+</div>
+
+<div class="live-section">
+<h2>Checklist vivo</h2>
+<table class="shopping-table" id="checkTable"><thead><tr><th>Categoria</th><th>Item</th><th>Status</th><th>Prioridade</th></tr></thead><tbody><tr><td>Documentos</td><td>Passaporte válido</td><td><select class="checkstatus"><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td>Alta</td></tr>
+<tr><td>Documentos</td><td>Regra de entrada México / visto EUA</td><td><select class="checkstatus"><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td>Alta</td></tr>
+<tr><td>Financeiro</td><td>Wise carregado</td><td><select class="checkstatus"><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td>Alta</td></tr>
+<tr><td>Financeiro</td><td>MXN físico 3.000–5.000</td><td><select class="checkstatus"><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td>Média</td></tr>
+<tr><td>Reservas</td><td>Hotel Playa fechado</td><td><select class="checkstatus"><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td>Alta</td></tr>
+<tr><td>Reservas</td><td>Hotel Cancún fechado</td><td><select class="checkstatus"><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td>Alta</td></tr>
+<tr><td>Passeios</td><td>Xcaret comprado</td><td><select class="checkstatus"><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td>Alta</td></tr>
+<tr><td>Passeios</td><td>Catamarã comprado</td><td><select class="checkstatus"><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td>Alta</td></tr>
+<tr><td>Passeios</td><td>Ferry Cozumel/Isla validado</td><td><select class="checkstatus"><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td>Média</td></tr>
+<tr><td>Operacional</td><td>eSIM / internet</td><td><select class="checkstatus"><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td>Alta</td></tr>
+<tr><td>Operacional</td><td>Seguro viagem</td><td><select class="checkstatus"><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td>Alta</td></tr>
+<tr><td>Operacional</td><td>Google Maps offline</td><td><select class="checkstatus"><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td>Média</td></tr></tbody></table>
+</div>
+
+<div class="live-section">
+<h2>Reservas e comprovantes</h2>
+<table class="shopping-table" id="reserveTable"><thead><tr><th>Reserva</th><th>Data</th><th>Status</th><th>Valor real</th><th>Link</th></tr></thead><tbody><tr><td>Voo GRU-CUN</td><td>06/06/2026</td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td><input class="resreal" type="number" value=""></td><td><input value=""></td></tr>
+<tr><td>Hotel Playa</td><td>06–11/06</td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td><input class="resreal" type="number" value=""></td><td><input value=""></td></tr>
+<tr><td>Hotel Cancún</td><td>11–16/06</td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td><input class="resreal" type="number" value=""></td><td><input value=""></td></tr>
+<tr><td>Xcaret</td><td>09/06/2026</td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td><input class="resreal" type="number" value=""></td><td><input value="https://www.xcaret.com/pt/"></td></tr>
+<tr><td>Cozumel ferry/snorkel</td><td>08/06/2026</td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td><input class="resreal" type="number" value=""></td><td><input value="https://www.ultramarferry.com/"></td></tr>
+<tr><td>Isla Mujeres</td><td>12/06/2026</td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td><input class="resreal" type="number" value=""></td><td><input value="https://www.ultramarferry.com/"></td></tr>
+<tr><td>Catamarã Isla Mujeres</td><td>13/06/2026</td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td><input class="resreal" type="number" value=""></td><td><input value="https://www.xcaret.com/en/xailing/catamaran-prime-tour/"></td></tr>
+<tr><td>Lancha transparente</td><td>14/06/2026</td><td><select><option >Pendente</option><option >Reservado</option><option >Pago</option><option selected>Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td><td><input class="resreal" type="number" value=""></td><td><input value="https://www.civitatis.com/br/cancun/passeio-barco-transparente-cancun/"></td></tr></tbody></table>
+</div>
+
+<div class="live-section">
+<h2>Câmbio e clima</h2>
+<div class="kpi-grid">
+<div class="kpi"><span>USD → BRL</span><strong id="usdRate">carregar</strong></div>
+<div class="kpi"><span>MXN → BRL</span><strong id="mxnRate">carregar</strong></div>
+<div class="kpi"><span>Cancún</span><strong id="weatherCancun">carregar</strong></div>
+<div class="kpi"><span>Playa</span><strong id="weatherPlaya">carregar</strong></div>
+</div>
+<div class="action-row"><button onclick="loadLiveData()">Atualizar câmbio/clima</button></div>
+</div>
+
+<div class="live-section">
+<h2>Cards inteligentes</h2>
+<details class="smart-card-v2" open><summary>Xcaret — status, custo, mapa, YouTube e o que levar</summary><div><p><b>Data:</b> 09/06 • <b>Custo:</b> R$ 600–950 • <b>Status:</b> pendente</p><ul><li><a href="https://www.xcaret.com/pt/" target="_blank">Site oficial</a></li><li><a href="https://www.google.com/maps/search/Xcaret+Park" target="_blank">Mapa</a></li><li>Levar roupa de banho, toalha, chinelo, protetor, power bank.</li><li>Dia cansativo: dormir bem no dia anterior.</li></ul></div></details>
+<details class="smart-card-v2"><summary>Catamarã Isla Mujeres — status, marina, custo e checklist</summary><div><p><b>Data:</b> 13/06 • <b>Custo:</b> R$ 300–680 • <b>Status:</b> pendente</p><ul><li><a href="https://www.xcaret.com/en/xailing/catamaran-prime-tour/" target="_blank">Catamarã Xailing</a></li><li>Confirmar marina, horário de check-in e política de clima.</li><li>Levar protetor, toalha, óculos, roupa de banho e pesos para gorjeta.</li></ul></div></details>
+<details class="smart-card-v2"><summary>Dia 15 — descanso, compras e buffer climático</summary><div><p><b>Função:</b> reduzir perrengue e deixar margem de segurança.</p><ul><li><a href="https://maps.google.com/?q=Walmart+Cancun+Centro" target="_blank">Walmart Cancún Centro</a></li><li>Comprar tequila, doces, chocolates, farmácia, snacks e souvenirs.</li><li>Usar como plano B se ferry/catamarã tiver clima ruim.</li></ul></div></details>
+</div>
+
+<div class="live-section">
+<h2>Plano anti-perrengue / vale ou não vale</h2>
+<table class="shopping-table"><thead><tr><th>Item</th><th>Recomendação</th><th>Impacto</th></tr></thead><tbody>
+<tr><td>Chuva em dia de mar</td><td>Usar dia 15 como buffer</td><td>Alto</td></tr>
+<tr><td>Sem peso físico</td><td>Levar MXN 3.000–5.000</td><td>Alto</td></tr>
+<tr><td>Apple/eletrônicos</td><td>Normalmente não compensa</td><td>Baixo</td></tr>
+<tr><td>Walmart</td><td>Vale muito para snacks/farmácia/tequila</td><td>Alto</td></tr>
+<tr><td>Dia cansativo</td><td>Xcaret, Cozumel e Tulum: evitar noite pesada</td><td>Alto</td></tr>
+</tbody></table>
+</div>
+
+<div class="live-section">
+<h2>Google Sheets embutido</h2>
+<p>Cole aqui o link de incorporação publicado do Google Sheets. Depois de salvo, ele aparece dentro do roteiro.</p>
+<input id="sheetUrlInput" placeholder="Cole o link iframe/publicado do Google Sheets" style="width:100%;padding:8px;border:1px solid #D1D5DB;border-radius:8px;">
+<div class="action-row"><button onclick="saveSheetUrl()">Salvar link do Sheets</button><a href="painel_vivo_viagem_playa_cancun_2026.xlsx" target="_blank">Abrir Excel</a></div>
+<iframe id="sheetFrame" src="about:blank" title="Google Sheets vivo"></iframe>
+</div>
+</section>
+
+
+<section class="page"><h1>ROTEIRO PLAYA DEL CARMEN / CANCÚN 2026</h1><div class="intro"><b>Casal | 06/06/2026 a 16/06/2026</b><br>Cancún + Playa del Carmen + Riviera Maya + cenotes + parques + beach clubs.<br>Versão baseada no vídeo <a href="https://youtu.be/PZDJe_K7ir0?si=ZJkQyV9WGqVI88Fl" target="_blank">YouTube — referência do roteiro</a>.
+<div class="intro"><b>Playlist Cancun de A a Z:</b><a href="https://www.youtube.com/playlist?list=PLsZkF16c0gMGcM5u0M4dwNXs3ts4Oc-H_" target="_blank">Abrir playlist no YouTube</a><br>
+Conteúdo complementar para revisar dicas práticas de Cancún, Riviera Maya, parques, dinheiro, aeroporto e logística antes de fechar reservas.
+</div><div class="intro"><b>Dicas para economizar:</b><a href="https://dicasdecancun.com.br/cancun/como-economizar-em-cancun-mexico/" target="_blank">
+Abrir guia de economia em Cancún
+</a><br>
+Referência complementar com foco em câmbio, alimentação, transporte, parques e estratégias para reduzir custos na viagem.
+</div></div><h2>1. VOOS E LOGÍSTICA INTERNACIONAL</h2>
+<div class="card">
+<div class="card-title">Cenário simplificado</div>
+<ul>
+<li>GRU → CUN via Panamá pela Copa Airlines.</li>
+<li>Conexão recomendada: aproximadamente 2h–2h30.</li>
+<li>Evitar conexão de apenas 1h quando possível.</li>
+<li>Foco: reduzir custo, reduzir dias fora e simplificar a viagem.</li>
+</ul>
+</div>
+</section>
+<section class="page compact-playa"><h2>2. PLAYA DEL CARMEN</h2>
+<p><b>Chegada oficial:</b> 06/06 após chegada em CUN e traslado/check-in.</p>
+<p><b>Saída oficial:</b> 11/06 após café/check-out, com deslocamento para a base final em Cancún.</p><details class="day-block"><summary>06/06 sáb - Chegada em Cancún + Playa del Carmen</summary><div class="inside"><ul><li>16:23 — chegada em CUN.</li><li>17:15 — imigração e retirada de bagagem.</li><li>18:00 — transfer/carro para Playa del Carmen.</li><li>19:15 — chegada em Playa del Carmen.</li><li>20:30 — jantar leve na <a href="https://www.google.com/maps/search/Quinta+Avenida+Playa+del+Carmen" target="_blank">Quinta Avenida</a>.</li></ul><table class="route-table"><tr><td><a href="https://www.google.com/maps/dir/Cancun+International+Airport/Hyatt+Centric+Playa+del+Carmen" target="_blank">CUN → Hyatt</a></td><td><a href="https://www.google.com/maps/dir/Cancun+International+Airport/The+Reef+28+Playa+del+Carmen" target="_blank">CUN → The Reef 28</a></td><td><a href="https://www.google.com/maps/dir/Cancun+International+Airport/Antera+Hotel+Playa+del+Carmen" target="_blank">CUN → Antera</a></td></tr></table></div></details><details class="day-block"><summary>07/06 dom - <a href="https://www.google.com/maps/search/Playa+Mamitas+Playa+del+Carmen" target="_blank">Playa Mamitas</a> + Coralina + Coco Bongo</summary><div class="inside"><ul><li>09:00 — <a href="https://www.google.com/maps/search/Playa+Mamitas+Playa+del+Carmen" target="_blank">Playa Mamitas</a>.</li><li>12:30 — almoço.</li><li>14:30 — <a href="https://www.google.com/maps/search/Coralina+Daylight+Club" target="_blank">Coralina Daylight Club</a>.</li><li>18:00 — descanso no hotel.</li><li>22:30 — <a href="https://www.google.com/maps/search/Coco+Bongo+Playa+del+Carmen" target="_blank">Coco Bongo VIP</a>.</li></ul><table class="route-table"><tr><td><a href="https://www.google.com/maps/dir/Hyatt+Centric+Playa+del+Carmen/Coco+Bongo+Playa+del+Carmen" target="_blank">Hyatt → Coco Bongo</a></td><td><a href="https://www.google.com/maps/dir/The+Reef+28+Playa+del+Carmen/Coco+Bongo+Playa+del+Carmen" target="_blank">The Reef 28 → Coco Bongo</a></td><td><a href="https://www.google.com/maps/dir/Antera+Hotel+Playa+del+Carmen/Coco+Bongo+Playa+del+Carmen" target="_blank">Antera → Coco Bongo</a></td></tr></table></div></details><details class="day-block"><summary>08/06 seg - Cozumel + snorkel premium + <a href="https://www.google.com/maps/search/Mr+Sanchos+Cozumel" target="_blank">Mr. Sanchos</a></summary><div class="inside"><ul><li>07:30 — sair para o ferry.</li><li>08:00 — ferry Playa → Cozumel.</li><li>09:00 — chegada em Cozumel.</li><li>10:00 — snorkel <a href="https://www.google.com/maps/search/El+Cielo+Cozumel" target="_blank">El Cielo</a>/<a href="https://www.google.com/maps/search/Palancar+Reef+Cozumel" target="_blank">Palancar</a>/<a href="https://www.google.com/maps/search/Colombia+Reef+Cozumel" target="_blank">Colombia</a>.</li><li>14:30 — <a href="https://www.google.com/maps/search/Mr+Sanchos+Cozumel" target="_blank">Mr. Sanchos</a>.</li><li>18:00 — ferry de volta.</li></ul><table class="route-table"><tr><td><a href="https://www.google.com/maps/dir/Hyatt+Centric+Playa+del+Carmen/Ultramar+Ferry+Playa+del+Carmen" target="_blank">Hyatt → Ferry Cozumel</a></td><td><a href="https://www.google.com/maps/dir/The+Reef+28+Playa+del+Carmen/Ultramar+Ferry+Playa+del+Carmen" target="_blank">The Reef 28 → Ferry Cozumel</a></td><td><a href="https://www.google.com/maps/dir/Antera+Hotel+Playa+del+Carmen/Ultramar+Ferry+Playa+del+Carmen" target="_blank">Antera → Ferry Cozumel</a></td></tr></table></div></details><details class="day-block"><summary>09/06 ter - <a href="https://www.xplor.travel/pt/" target="_blank">Xcaret</a> - adrenalina</summary><div class="inside">
+<p><strong>08:00</strong> — saída do hotel rumo ao <a href="https://www.xcaret.com/pt/" target="_blank">Xcaret</a>.</p>
+<p><strong>09:00</strong> — entrada no parque.</p>
+<p><strong>Manhã</strong> — rios subterrâneos, aquário, aviário e trilhas.</p>
+<p><strong>12:30</strong> — almoço dentro do parque.</p>
+<p><strong>Tarde</strong> — praias naturais, áreas culturais e tempo livre.</p>
+<p><strong>19:00</strong> — show <a href="https://www.xcaret.com/en/attractions-performances-xcaret/" target="_blank">México Espectacular</a>.</p>
+<p><strong>21:30</strong> — retorno para Playa del Carmen.</p>
+
+<div class="shopping-card">
+<strong>Observações importantes</strong>
+<ul>
+<li>Levar roupa de banho, toalha e chinelo.</li>
+<li>Chegar cedo melhora bastante a experiência.</li>
+<li>Xcaret faz muito mais sentido logisticamente em Playa del Carmen.</li>
+</ul>
+</div>
+</div></details><details class="day-block"><summary>10/06 qua - Cenotes uau - <a href="https://www.google.com/maps/search/Cenote+Dos+Ojos" target="_blank">Dos Ojos</a> + <a href="https://www.google.com/maps/search/Gran+Cenote+Tulum" target="_blank">Gran Cenote</a> + <a href="https://www.google.com/maps/search/Cenote+Calavera" target="_blank">Calavera</a></summary><div class="inside"><ul><li>07:00 — saída.</li><li>08:15 — <a href="https://www.google.com/maps/search/Cenote+Dos+Ojos" target="_blank">Dos Ojos</a>.</li><li>11:00 — <a href="https://www.google.com/maps/search/Gran+Cenote+Tulum" target="_blank">Gran Cenote</a>.</li><li>13:30 — almoço em Tulum.</li><li>15:00 — <a href="https://www.google.com/maps/search/Cenote+Calavera" target="_blank">Calavera</a> ou <a href="https://www.google.com/maps/search/Cenote+Azul+Riviera+Maya" target="_blank">Cenote Azul</a>.</li><li>18:00 — retorno.</li></ul><table class="route-table"><tr><td><a href="https://www.google.com/maps/dir/Hyatt+Centric+Playa+del+Carmen/Gran+Cenote+Tulum" target="_blank">Hyatt → Gran Cenote</a></td><td><a href="https://www.google.com/maps/dir/The+Reef+28+Playa+del+Carmen/Gran+Cenote+Tulum" target="_blank">The Reef 28 → Gran Cenote</a></td><td><a href="https://www.google.com/maps/dir/Antera+Hotel+Playa+del+Carmen/Gran+Cenote+Tulum" target="_blank">Antera → Gran Cenote</a></td></tr></table></div></details>
+
+<details class="day-block">
+<summary>11/06 qui - Saída oficial de Playa del Carmen + base Cancún</summary>
+<div class="inside">
+
+<p><strong>Objetivo do dia:</strong> transição confortável entre Playa del Carmen e Cancún sem transformar o dia em correria.</p>
+
+<div class="shopping-card">
+<strong>Tempo real de deslocamento</strong>
+<ul>
+<li>Playa del Carmen → Cancún: média real entre 1h15 e 1h40.</li>
+<li>Zona Hoteleira pode adicionar mais 20–40min dependendo do trânsito.</li>
+<li>Ideal sair entre 10h e 11h para evitar correria e ainda aproveitar Cancún.</li>
+</ul>
+</div>
+
+<div class="shopping-card">
+<strong>Melhores opções de transporte</strong>
+<ul>
+<li><strong>Uber:</strong> normalmente MXN 900–1500 (~R$ 260–430).</li>
+<li><strong>ADO:</strong> mais barato e confortável, porém menos flexível com malas.</li>
+<li><strong>Transfer privado:</strong> experiência mais confortável para casal.</li>
+</ul>
+</div>
+
+<ul>
+<li>Manhã tranquila em Playa del Carmen.</li>
+<li>Café da manhã sem pressa.</li>
+<li>Check-out e saída confortável.</li>
+<li>Chegada em Cancún no início/meio da tarde.</li>
+<li>Check-in ou guarda-volumes.</li>
+<li>Walmart + compras estratégicas.</li>
+<li>Praia leve, rooftop ou jantar tranquilo.</li>
+</ul>
+
+<table class="route-table">
+<tr>
+<td><a href="https://www.google.com/maps/dir/Hyatt+Centric+Playa+del+Carmen/Emporio+Cancun" target="_blank">Hyatt → Emporio</a></td>
+<td><a href="https://www.google.com/maps/dir/The+Reef+28+Playa+del+Carmen/Wyndham+Garden+Cancun+Downtown" target="_blank">The Reef 28 → Wyndham</a></td>
+<td><a href="https://www.google.com/maps/dir/Antera+Hotel+Playa+del+Carmen/Krystal+Urban+Cancun" target="_blank">Antera → Krystal Urban</a></td>
+</tr>
+</table>
+
+<div class="shopping-card">
+<strong>Estratégia inteligente</strong>
+<ul>
+<li>Evitar passeio pesado nesse dia.</li>
+<li>Tulum + mudança de cidade no mesmo dia tende a ficar cansativo.</li>
+<li>Esse dia serve para desacelerar e melhorar a experiência em Cancún.</li>
+</ul>
+</div>
+
+</div>
+</details>
+
+<h2>2.1 HOTÉIS</h2>
+<table class="purple-table small"><thead><tr><th style="width:24%">Hotel</th><th>Por que entra no plano</th><th style="width:18%">Google Travel 06–11/06</th><th style="width:18%">Decolar 06–11/06</th></tr></thead><tbody>
+<tr><td><a href="https://www.hyatt.com/hyatt-centric/en-US/cunct-hyatt-centric-playa-del-carmen" target="_blank">Hyatt Centric Playa del Carmen</a></td><td>4 estrelas, localização top, perto da Quinta e Coco Bongo. Bom se preço estiver competitivo.</td><td><a href="https://www.google.com/travel/search?q=Hyatt+Centric+Playa+del+Carmen&hl=en-BR&gl=br&ap=ugEGcHJpY2Vz&checkin=2026-06-06&checkout=2026-06-11&adults=2" target="_blank">Google Travel</a></td><td><a href="https://www.decolar.com/hoteis/search?destination=Hyatt+Centric+Playa+del+Carmen&checkin=2026-06-06&checkout=2026-06-11&adults=2&rooms=1&currency=BRL" target="_blank">Decolar 06–11/06</a></td></tr>
+<tr><td><a href="https://www.reefresorts.com/the-reef-28/" target="_blank">The Reef 28</a></td><td>Adults only, perto de Mamitas/Quinta. Melhor equilíbrio para casal sem luxo caro.</td><td><a href="https://www.google.com/travel/search?q=The+Reef+28+Playa+del+Carmen&hl=en-BR&gl=br&ap=ugEGcHJpY2Vz&checkin=2026-06-06&checkout=2026-06-11&adults=2" target="_blank">Google Travel</a></td><td><a href="https://www.decolar.com/hoteis/search?destination=The+Reef+28+Playa+del+Carmen&checkin=2026-06-06&checkout=2026-06-11&adults=2&rooms=1&currency=BRL" target="_blank">Decolar 06–11/06</a></td></tr>
+<tr><td><a href="https://anterahotel.com/" target="_blank">Antera Hotel & Residences</a></td><td>4 estrelas/smart, central, mais econômico; bom para controlar orçamento.</td><td><a href="https://www.google.com/travel/search?q=Antera+Hotel+%26+Residences+Playa+del+Carmen&hl=en-BR&gl=br&ap=ugEGcHJpY2Vz&checkin=2026-06-06&checkout=2026-06-11&adults=2" target="_blank">Google Travel</a></td><td><a href="https://www.decolar.com/hoteis/search?destination=Antera+Hotel+%26+Residences+Playa+del+Carmen&checkin=2026-06-06&checkout=2026-06-11&adults=2&rooms=1&currency=BRL" target="_blank">Decolar 06–11/06</a></td></tr>
+<tr><td><a href="https://www.beplaya.com/" target="_blank">Be Playa Hotel</a></td><td>Boutique 4 estrelas, rooftop, boa vibe de casal sem preço de resort de luxo.</td><td><a href="https://www.google.com/travel/search?q=Be+Playa+Hotel+Playa+del+Carmen&hl=en-BR&gl=br&ap=ugEGcHJpY2Vz&checkin=2026-06-06&checkout=2026-06-11&adults=2" target="_blank">Google Travel</a></td><td><a href="https://www.decolar.com/hoteis/search?destination=Be+Playa+Hotel+Playa+del+Carmen&checkin=2026-06-06&checkout=2026-06-11&adults=2&rooms=1&currency=BRL" target="_blank">Decolar 06–11/06</a></td></tr>
+</tbody></table>
+
+<h2>2.2 RESTAURANTES E VIDA NOTURNA</h2>
+
+<table class="food-table">
+<thead>
+<tr>
+<th style="width:30%">Lugar</th>
+<th>Perfil / quando usar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://elfogon.com.mx/" target="_blank">El Fogón</a></td>
+<td>Tacos extremamente famosos em Playa del Carmen; excelente custo-benefício para jantar simples e muito bem recomendado.</td>
+</tr>
+<tr>
+<td><a href="https://www.lacuevadelchango.com/" target="_blank">La Cueva del Chango</a></td>
+<td>Café da manhã/brunch forte, ambiente gostoso e boa escolha para começar o dia sem luxo desnecessário.</td>
+</tr>
+<tr>
+<td><a href="https://www.instagram.com/latabernapdc/" target="_blank">La Taberna</a></td>
+<td>Drinks e comida casual, boa opção de noite leve sem entrar em perfil caro.</td>
+</tr>
+<tr>
+<td><a href="https://www.clandestinorooftop.com/" target="_blank">Clandestino Rooftop</a></td>
+<td>Rooftop com visual bonito e clima mais premium, mas ainda dentro de uma proposta equilibrada.</td>
+</tr>
+<tr>
+<td><a href="https://www.cocobongo.com/" target="_blank">Coco Bongo Playa del Carmen</a></td>
+<td>Experiência turística clássica; vale considerar pelo menos uma noite se fizer sentido no orçamento.</td>
+</tr>
+<tr>
+<td><a href="https://www.instagram.com/barlocoplaya/" target="_blank">Bar Loco</a></td>
+<td>Bar turístico/divertido, bom para noite descomplicada e custo mais controlado.</td>
+</tr>
+<tr>
+<td><a href="https://www.pubcrawlnetwork.com/playa-del-carmen/" target="_blank">Pub Crawl Playa del Carmen</a></td>
+<td>Opção social/internacional para conhecer bares sem precisar escolher tudo sozinho.</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section class="page compact-cancun">
+
+<h2>3. CANCÚN</h2>
+<p><b>Chegada oficial:</b> 11/06 após saída de Playa del Carmen e check-in no hotel final.</p>
+<p><b>Saída oficial:</b> 16/06 com deslocamento para o aeroporto CUN e retorno ao Brasil.</p>
+<details class="day-block"><summary>12/06 sex - Isla Mujeres - <a href="https://www.google.com/maps/search/Playa+Norte+Isla+Mujeres" target="_blank">Playa Norte</a></summary><div class="inside"><ul><li>07:30 — saída para <a href="https://www.google.com/maps/search/Puerto+Juarez+Ultramar" target="_blank">Puerto Juárez</a>.</li><li>09:00 — ferry Ultramar.</li><li>10:00 — carrinho de golf.</li><li>12:00 — <a href="https://www.google.com/maps/search/Playa+Norte+Isla+Mujeres" target="_blank">Playa Norte</a>.</li><li>17:00 — ferry de volta.</li><li>21:00 — noite livre.</li></ul><div class="maps"><a class="maplink" href="https://www.google.com/maps/dir/Hyatt+Centric+Playa+del+Carmen/Puerto+Juarez+Ultramar" target="_blank">Hyatt → Puerto Juárez</a><a class="maplink" href="https://www.google.com/maps/dir/The+Reef+28+Playa+del+Carmen/Puerto+Juarez+Ultramar" target="_blank">The Reef 28 → Puerto Juárez</a><a class="maplink" href="https://www.google.com/maps/dir/Antera+Hotel+Playa+del+Carmen/Puerto+Juarez+Ultramar" target="_blank">Antera → Puerto Juárez</a></div></details></div><details class="day-block"><summary>13/06 sáb - <a href="https://www.xcaret.com/pt/" target="_blank">Catamarã Isla Mujeres</a> + show México Espectacular</summary><div class="inside">
+<p><strong>08:00</strong> — chegada na marina / check-in do passeio.</p>
+<p><strong>09:00</strong> — saída do <a href="https://www.xcaret.com/en/xailing/catamaran-prime-tour/" target="_blank">catamarã para Isla Mujeres</a>.</p>
+<p><strong>Manhã</strong> — navegação pelo Caribe + open bar leve + música.</p>
+<p><strong>11:00</strong> — parada para snorkel.</p>
+<p><strong>12:30</strong> — chegada em <a href="https://www.google.com/maps/search/Isla+Mujeres" target="_blank">Isla Mujeres</a>.</p>
+<p><strong>13:00</strong> — almoço / beach club.</p>
+<p><strong>Tarde</strong> — Playa Norte e tempo livre.</p>
+<p><strong>17:00</strong> — retorno para Cancún com pôr do sol.</p>
+
+<div class="shopping-card">
+<strong>Observações importantes</strong>
+<ul>
+<li>Passeio normalmente sai da Hotel Zone ou Puerto Juárez.</li>
+<li>Levar protetor solar, toalha e roupa de banho.</li>
+</ul>
+</div>
+</div></details>
+<details class="day-block">
+<summary>14/06 dom - Cancún leve + marina + lancha transparente + jantar final</summary>
+<div class="inside">
+<ul>
+<li>Manhã — praia/piscina ou descanso no hotel.</li>
+<li>12:30 — almoço leve em Cancún.</li>
+<li>15:00 — <a href="https://www.civitatis.com/br/cancun/passeio-barco-transparente-cancun/" target="_blank">lancha transparente em Cancún</a> ou passeio leve na marina.</li>
+<li>17:30 — sunset na Zona Hoteleira ou Puerto Cancún Marina.</li>
+<li>20:30 — jantar final em Cancún, sem exagerar no orçamento.</li>
+</ul>
+<table class="route-table">
+<tr>
+<td><a href="https://www.google.com/maps/dir/Emporio+Cancun/Puerto+Cancun+Marina" target="_blank">Emporio → Puerto Cancún Marina</a></td>
+<td><a href="https://www.google.com/maps/dir/Wyndham+Garden+Cancun+Downtown/Puerto+Cancun+Marina" target="_blank">Wyndham → Puerto Cancún Marina</a></td>
+<td><a href="https://www.google.com/maps/dir/Krystal+Urban+Cancun/Puerto+Cancun+Marina" target="_blank">Krystal Urban → Puerto Cancún Marina</a></td>
+</tr>
+</table>
+<div class="shopping-card">
+<strong>Objetivo do dia</strong>
+<ul>
+<li>Manter uma experiência leve em Cancún sem remover nenhum passeio principal.</li>
+<li>Encaixar a lancha transparente como opcional prático.</li>
+<li>Deixar o dia menos cansativo após Isla Mujeres e catamarã.</li>
+</ul>
+</div>
+</div>
+</details>
+
+<details class="day-block">
+<summary>15/06 seg - Dia livre, compras e descanso em Cancún</summary>
+<div class="inside">
+<ul>
+<li>Manhã — praia, piscina ou descanso.</li>
+<li>Tarde — <a href="https://maps.google.com/?q=Walmart+Cancun+Centro" target="_blank">Walmart Cancún Centro</a>, shopping, chocolates, tequila, farmácia e souvenirs.</li>
+<li>Noite — jantar tranquilo e organização para o voo.</li>
+</ul>
+<div class="shopping-card">
+<strong>Objetivo do dia</strong>
+<ul>
+<li>Evitar excesso de correria.</li>
+<li>Criar flexibilidade climática.</li>
+<li>Aproveitar melhor o hotel em Cancún.</li>
+<li>Deixar uma janela confortável antes do retorno.</li>
+</ul>
+</div>
+</div>
+</details>
+
+<details class="day-block"><summary>16/06 ter - Retorno CUN → MEX → GRU</summary><div class="inside">Saída de Cancún com folga. Chegar no aeroporto CUN pelo menos 3h antes. Voo AM543 CUN 16:31 → MEX 18:00. Conexão 45min. AM14 MEX 18:45 → GRU 07:30 +1.<br>
+
+<table class="route-table">
+<tr>
+<td><a href="https://www.google.com/maps/dir/Emporio+Cancun/Cancun+International+Airport" target="_blank">Emporio Cancún → Aeroporto CUN</a></td>
+<td><a href="https://www.google.com/maps/dir/Wyndham+Garden+Cancun+Downtown/Cancun+International+Airport" target="_blank">Wyndham Garden Cancún Downtown → Aeroporto CUN</a></td>
+<td><a href="https://www.google.com/maps/dir/Nilu+by+Selina+Cancun+Downtown/Cancun+International+Airport" target="_blank">Nílu by Selina → Aeroporto CUN</a></td>
+</tr>
+</table>
+
+</details>
+
+<h2>3.1 HOTÉIS</h2>
+
+<table class="purple-table small">
+<thead>
+<tr><th style="width:25%">Hotel</th><th>Perfil</th><th style="width:18%">Localização</th><th>Destaque</th></tr>
+</thead>
+<tbody>
+<tr><td><a href="https://hotelesemporio.com/hoteles/emporio-cancun/" target="_blank">Emporio Cancún</a></td><td>Melhor equilíbrio</td><td>Zona Hoteleira</td><td>Confortável, praia boa e boa logística para dias finais.</td></tr>
+<tr><td><a href="https://www.wyndhamhotels.com/wyndham-garden/cancun-mexico/wyndham-garden-cancun-downtown/overview" target="_blank">Wyndham Garden Cancún Downtown</a></td><td>Custo-benefício</td><td>Downtown</td><td>Perto de Walmart, Uber fácil e bom como base logística.</td></tr>
+<tr><td><a href="https://www.niluhotels.mx/cancun-downtown" target="_blank">Nílu by Selina</a></td><td>Econômico moderno</td><td>Downtown</td><td>Boa mobilidade urbana e proposta moderna.</td></tr>
+</tbody>
+</table>
+
+<div class="shopping-card">
+<strong>Análise estratégica — hotéis em Cancún</strong>
+
+<p><strong>Downtown:</strong> melhor custo-benefício, Walmart, marina, ferry, aeroporto e logística.</p>
+
+<p><strong>Zona Hoteleira:</strong> melhor experiência Caribe, praia e atmosfera premium.</p>
+
+<p><strong>Estratégia ideal:</strong> economizar melhor em Playa del Carmen e subir um nível em Cancún.</p>
+<p><strong>Atualização real de preços:</strong> os hotéis Downtown mais fortes estão aparecendo na faixa real de R$ 2.100–2.600 para o casal nas 5 noites, elevando parcialmente o custo final do roteiro.</p>
+
+</div>
+
+<table class="shopping-table">
+<thead>
+<tr>
+<th style="width:22%">Hotel</th>
+<th style="width:18%">Perfil</th>
+<th style="width:20%">Faixa saudável</th>
+<th>Análise</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><a href="https://www.wyndhamhotels.com/" target="_blank">Wyndham Garden Cancún Downtown</a></td>
+<td>Racional puro</td>
+<td>R$ 1.100–1.600</td>
+<td>Preço subiu em 2026; ainda muito forte em logística e Walmart.</td>
+</tr>
+
+<tr>
+<td><a href="https://www.marriott.com/" target="_blank">Fairfield Marriott Cancún Downtown</a></td>
+<td>Racional premium</td>
+<td>R$ 1.300–1.900</td>
+<td>Hoje virou uma das melhores relações conforto/localização em Downtown.</td>
+</tr>
+
+<tr>
+<td><a href="https://www.krystal-hotels.com.mx/" target="_blank">Krystal Urban Cancún</a></td>
+<td>Premium inteligente</td>
+<td>R$ 1.500–2.200</td>
+<td>Hoje é um dos melhores equilíbrios entre conforto, estrutura e preço.</td>
+</tr>
+
+<tr>
+<td><a href="https://hotelesemporio.com/" target="_blank">Emporio Cancún</a></td>
+<td>Experiência Cancún</td>
+<td>R$ 2.100–2.700</td>
+<td>Melhor atmosfera Caribe e fechamento premium.</td>
+</tr>
+
+</tbody>
+</table>
+<h2>3.2 RESTAURANTES E VIDA NOTURNA</h2>
+
+<table class="food-table">
+<thead>
+<tr>
+<th style="width:30%">Lugar</th>
+<th>Perfil / quando usar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.instagram.com/pescaditoscancun/" target="_blank">Pescaditos</a></td>
+<td>Tacos e frutos do mar famosos em Cancún; ótimo custo-benefício para comer bem sem gastar absurdo.</td>
+</tr>
+<tr>
+<td><a href="https://www.instagram.com/casabeacancun/" target="_blank">Casa Bea</a></td>
+<td>Comida mexicana local, ambiente mais raiz e boa alternativa fora do circuito ultra caro.</td>
+</tr>
+<tr>
+<td><a href="https://www.google.com/maps/search/Cielo+y+Tierra+Cancun" target="_blank">Cielo y Tierra</a></td>
+<td>Boa comida mexicana com proposta equilibrada, útil para jantar sem cair em restaurante caríssimo.</td>
+</tr>
+<tr>
+<td><a href="https://www.cocobongo.com/" target="_blank">Coco Bongo Cancún</a></td>
+<td>Experiência turística clássica e muito conhecida; vale se quiser uma noite icônica em Cancún.</td>
+</tr>
+<tr>
+<td><a href="https://www.lavaquitacancun.com/" target="_blank">La Vaquita Cancún</a></td>
+<td>Balada casual/divertida, mais despojada e sem proposta ultra premium.</td>
+</tr>
+<tr>
+<td><a href="https://www.google.com/maps/search/Playa+Forum+Cancun" target="_blank">Playa Forum / Coco Bongo Beach</a></td>
+<td>Área turística movimentada para ver o visual, caminhar e sentir a vibe da Zona Hoteleira.</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section class="page">
+
+<h2>4. CUSTOS</h2>
+
+<table class="purple-table small">
+<thead>
+<tr><th style="width:30%">Categoria</th><th style="width:18%">Estimativa</th><th>Observação</th></tr>
+</thead>
+<tbody>
+<tr><td>Voos</td><td>R$ 3.500–4.000</td><td>GRU → CUN via Panamá, com bagagem despachada.</td></tr>
+<tr><td>Hotel Playa del Carmen</td><td>R$ 3.500–6.000</td><td>5 noites próximas à Quinta Avenida.</td></tr>
+<tr><td>Hotel Cancún</td><td>R$ 2.100–3.200</td><td>5 noites finais para otimizar Isla Mujeres, catamarã, compras e aeroporto.</td></tr>
+<tr><td>Passeios</td><td>R$ 3.000–6.000</td><td>Xcaret, Cozumel, Isla Mujeres, cenotes e Tulum.</td></tr>
+<tr><td>Alimentação</td><td>R$ 1.500–3.000</td><td>Restaurantes, snacks, Walmart e beach clubs.</td></tr>
+<tr><td>Uber/Deslocamentos</td><td>R$ 700–1.500</td><td>Aeroportos, ferry, parques e deslocamentos pontuais.</td></tr>
+<tr><td>Reserva / compras</td><td>Variável</td><td>Definir teto antes da viagem.</td></tr>
+</tbody>
+</table>
+
+<h2 style="margin-top:14px;">4.1 Passeios e experiências</h2>
+
+<table class="shopping-table">
+<thead>
+<tr>
+<th style="width:30%">Experiência</th>
+<th style="width:20%">Faixa estimada</th>
+<th style="width:18%">Aprox. em real</th>
+<th>Vale a pena?</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Xcaret</td>
+<td>US$110–170</td>
+<td>~R$600–950</td>
+<td>Sim</td>
+</tr>
+
+<tr>
+<td>Catamarã Isla Mujeres (básico)</td>
+<td>US$55–80</td>
+<td>~R$300–450</td>
+<td>Muito</td>
+</tr>
+
+<tr>
+<td>Catamarã Isla Mujeres (open bar)</td>
+<td>US$80–120</td>
+<td>~R$450–680</td>
+<td>Sim</td>
+</tr>
+
+<tr>
+<td>Ferry Isla Mujeres</td>
+<td>US$14–28</td>
+<td>~R$80–160</td>
+<td>Sim</td>
+</tr>
+
+<tr>
+<td>Lancha transparente</td>
+<td>US$25–45</td>
+<td>~R$140–260</td>
+<td>Sim</td>
+</tr>
+
+<tr>
+<td>Coco Bongo</td>
+<td>US$70–120</td>
+<td>~R$400–680</td>
+<td>Depende</td>
+</tr>
+
+<tr>
+<td>Carrinho Isla Mujeres</td>
+<td>US$40–70</td>
+<td>~R$220–400</td>
+<td>Sim</td>
+</tr>
+
+<tr style="font-weight:700;">
+<td>TOTAL APROXIMADO</td>
+<td>US$394–653</td>
+<td>~R$2.190–3.580</td>
+<td>Base confortável</td>
+</tr>
+
+<table class="purple-table small">
+<thead><tr><th style="width:30%">Cenário</th><th>Total estimado por pessoa</th><th>Perfil</th></tr></thead>
+<tbody>
+<tr><td>Econômico inteligente</td><td>R$ 12.500–15.500</td><td>Hotéis custo-benefício, poucos excessos, Walmart e transfers inteligentes.</td></tr>
+<tr><td>Confortável premium</td><td>R$ 17.000–22.500</td><td>Bons hotéis, beach clubs e passeios principais sem exagero de luxo.</td></tr>
+<tr><td>Premium forte</td><td>R$ 24.000+</td><td>Hotéis melhores, mais conforto e menos controle de gastos.</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="page shopping-clean-page">
+
+</tbody>
+</table>
+<h2>5. MISSAS E IGREJAS CATÓLICAS</h2>
+
+<table class="shopping-table">
+<thead>
+<tr>
+<th style="width:24%">Cidade</th>
+<th style="width:28%">Igreja</th>
+<th style="width:22%">Horários mais relevantes</th>
+<th>Observações</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Playa del Carmen</td>
+<td><a href="https://www.google.com/search?q=Parroquia+Nuestra+Se%C3%B1ora+del+Carmen+Playa+del+Carmen" target="_blank">Parroquia Nuestra Señora del Carmen</a></td>
+<td>Domingos: ~10h / ~12h / ~19h</td>
+<td>Igreja mais tradicional e central de Playa, próxima à Quinta Avenida.</td>
+</tr>
+
+<tr>
+<td>Cancún</td>
+<td><a href="https://www.google.com/search?q=Parroquia+Cristo+Resucitado+Canc%C3%BAn" target="_blank">Parroquia Cristo Resucitado</a></td>
+<td>Domingos: ~09h / ~11h / ~18h</td>
+<td>Muito conhecida entre turistas e localizada na Zona Hoteleira.</td>
+</tr>
+
+<tr>
+<td>Cancún</td>
+<td><a href="https://www.google.com/search?q=Parroquia+Sagrada+Familia+Canc%C3%BAn" target="_blank">Parroquia Sagrada Familia</a></td>
+<td>Domingos: ~08h / ~10h / ~19h</td>
+<td>Boa opção para quem estiver em Downtown Cancún.</td>
+</tr>
+
+</tbody>
+</table>
+
+<div class="shopping-card">
+<strong>Observação importante</strong>
+<ul>
+<li>Horários de missa podem sofrer pequenas alterações em feriados e datas especiais.</li>
+<li>Recomendado validar horários na semana da viagem.</li>
+<li>As igrejas acima são as mais práticas/logísticas considerando o roteiro atual.</li>
+</ul>
+</div>
+
+<h2>6. COMPRAS — CANCÚN x PLAYA DEL CARMEN</h2>
+
+<div class="shopping-card">
+<strong>Estratégia recomendada</strong>
+<ul>
+<li><strong>Cancún</strong> tende a ser melhor para compras gerais, roupas, cosméticos, Walmart, farmácia, lojas grandes e shopping.</li>
+<li><strong>Playa del Carmen</strong> tende a ser melhor para artesanato, tequila, beachwear, lembranças e lojas locais.</li>
+<li><strong>Normalmente vale mais reservar algumas horas estratégicas para compras do que separar um dia inteiro da viagem.</strong></li>
+</ul>
+</div>
+
+<h2>6.1 Onde comprar em Cancún</h2>
+
+<table class="shopping-table">
+<thead>
+<tr>
+<th style="width:24%">Lugar</th>
+<th style="width:28%">Melhor para</th>
+<th style="width:18%">Moeda ideal</th>
+<th>Observação prática</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Walmart Cancún</td><td>Snacks, tequila, doces, farmácia, vitaminas</td><td>Peso mexicano</td><td>Excelente custo-benefício para compras práticas.</td></tr>
+<tr><td>La Isla Shopping Village</td><td>Roupas, perfumes, cosméticos</td><td>Cartão / dólar</td><td>Melhor shopping visual/turístico da viagem.</td></tr>
+<tr><td>Plaza Las Américas</td><td>Compras gerais e roupas</td><td>Peso mexicano</td><td>Mais “shopping local”.</td></tr>
+<tr><td>Liverpool</td><td>Perfumes e cosméticos</td><td>Cartão</td><td>Boa alternativa para promoções.</td></tr>
+<tr><td>Mercado 28</td><td>Artesanato e souvenirs</td><td>Peso mexicano</td><td>Negociar preço faz diferença.</td></tr>
+</tbody>
+</table>
+
+<h2>6.2 Onde comprar em Playa del Carmen</h2>
+
+<table class="shopping-table">
+<thead>
+<tr>
+<th style="width:24%">Lugar</th>
+<th style="width:28%">Melhor para</th>
+<th style="width:18%">Moeda ideal</th>
+<th>Observação prática</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Quinta Avenida</td><td>Souvenirs, roupas leves e beachwear</td><td>Peso mexicano</td><td>Principal eixo turístico/comercial.</td></tr>
+<tr><td>Lojas locais</td><td>Beachwear e artesanato</td><td>Peso mexicano</td><td>Experiência mais “México raiz”.</td></tr>
+<tr><td>Lojas de tequila e mezcal</td><td>Bebidas mexicanas</td><td>Peso mexicano</td><td>Comparar preços antes de comprar.</td></tr>
+</tbody>
+</table>
+
+<h2>6.3 O que realmente costuma valer a pena</h2>
+
+<table class="shopping-table">
+<thead>
+<tr>
+<th style="width:30%">Categoria</th>
+<th style="width:20%">Vale a pena?</th>
+<th>Observação</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Tequila / Mezcal</td><td>Sim — muito</td><td>Grande variedade e preços melhores que Brasil.</td></tr>
+<tr><td>Chocolate / doces mexicanos</td><td>Sim</td><td>Boa opção de lembrança.</td></tr>
+<tr><td>Produtos de farmácia</td><td>Sim</td><td>Vitaminas, skincare e itens específicos.</td></tr>
+<tr><td>Snacks / Takis</td><td>Sim</td><td>Mercados e Walmart valem muito.</td></tr>
+<tr><td>Roupas casuais</td><td>Depende</td><td>Vale mais em Cancún.</td></tr>
+<tr><td>Perfumes / cosméticos</td><td>Às vezes</td><td>Comparar promoções locais.</td></tr>
+<tr><td>Nike / Adidas / Vans</td><td>Às vezes</td><td>Compensa em promoções.</td></tr>
+<tr><td>iPhone / Apple</td><td>Normalmente não</td><td>México raramente chega no nível de vantagem do Paraguai.</td></tr>
+<tr><td>Notebook gamer</td><td>Não</td><td>Normalmente não compensa.</td></tr>
+</tbody>
+</table>
+
+<div class="shopping-card">
+<strong>Resumo rápido</strong>
+<ul>
+<li>Cancún = melhor para shopping, Walmart e compras gerais.</li>
+<li>Playa del Carmen = melhor para experiência local e tequila.</li>
+<li>Peso mexicano costuma funcionar melhor para lojas locais e comida.</li>
+<li>Dólar/cartão funciona melhor para turismo e grandes lojas.</li>
+</ul>
+</div>
+</section>
+
+<section class="page compact-final-section">
+
+<h2>6.4 Dinheiro, Wise e câmbio — estratégia inteligente</h2>
+
+<table class="shopping-table">
+<thead>
+<tr>
+<th style="width:28%">Situação</th>
+<th style="width:22%">Melhor forma</th>
+<th>Observação prática</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Hotéis</td>
+<td>Wise / cartão</td>
+<td>Normalmente funciona perfeitamente.</td>
+</tr>
+
+<tr>
+<td>Walmart / shopping</td>
+<td>Wise / cartão</td>
+<td>Excelente aceitação em Cancún e Playa del Carmen.</td>
+</tr>
+
+<tr>
+<td>Xcaret / ferry / catamarã</td>
+<td>Wise</td>
+<td>Empresas turísticas grandes aceitam normalmente.</td>
+</tr>
+
+<tr>
+<td>Gorjetas</td>
+<td>Peso mexicano físico</td>
+<td>Muito mais prático para garçons, carregadores e passeios.</td>
+</tr>
+
+<tr>
+<td>Tacos / lojas pequenas</td>
+<td>Peso mexicano físico</td>
+<td>Evita conversão ruim e pequenos problemas.</td>
+</tr>
+
+<tr>
+<td>Dólar físico</td>
+<td>Somente backup</td>
+<td>Muitos lugares convertem mal o troco.</td>
+</tr>
+
+<tr>
+<td>Saque Wise no México</td>
+<td>Possível</td>
+<td>Normalmente existe taxa local do ATM.</td>
+</tr>
+
+</tbody>
+</table>
+
+<div class="shopping-card">
+<strong>Estratégia recomendada para essa viagem</strong>
+<ul>
+<li>Wise como forma principal.</li>
+<li>Levar peso mexicano físico para conforto e gorjetas.</li>
+<li>Pequeno backup em dólar para emergência.</li>
+<li>Evitar depender 100% de saque local.</li>
+<li>Faixa confortável em espécie: MXN 3.000–5.000.</li>
+</ul>
+</div>
+
+<h2>QR CODES E ATALHOS OPERACIONAIS</h2>
+<table class="shopping-table">
+<thead>
+<tr>
+<th style="width:25%">Atalho</th>
+<th>Uso prático</th>
+<th style="width:30%">Link base</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Planilha viva</td>
+<td>Custos, reservas e checklist em tempo real.</td>
+<td><a href="painel_vivo_viagem_playa_cancun_2026.xlsx" target="_blank">Abrir Excel</a></td>
+</tr>
+<tr>
+<td>Google Sheets</td>
+<td>Importar e publicar o painel na web.</td>
+<td><a href="https://docs.google.com/spreadsheets/" target="_blank">Abrir Sheets</a></td>
+</tr>
+<tr>
+<td>Roteiro como app</td>
+<td>Hospedar HTML em domínio/HTTPS e instalar na tela inicial do iPhone.</td>
+<td><a href="manifest.json" target="_blank">Manifest PWA</a></td>
+</tr>
+</tbody>
+</table>
+
+<h2>7. LINKS</h2>
+
+<table class="purple-table small">
+<thead><tr><th style="width:24%">Categoria</th><th>Links</th></tr></thead>
+<tbody>
+<tr><td>Voos</td><td><a href="https://www.decolar.com/" target="_blank">Decolar</a> · <a href="https://www.google.com/travel/flights" target="_blank">Google Flights</a> · <a href="https://www.skyscanner.com.br/" target="_blank">Skyscanner</a></td></tr>
+<tr><td>Playa del Carmen</td><td><a href="https://www.ultramarferry.com/" target="_blank">Ferry Cozumel</a> · <a href="https://www.xcaret.com/pt/" target="_blank">Xcaret</a> · <a href="https://tabootulum.com/" target="_blank">Taboo</a> · <a href="https://rosanegra.com.mx/" target="_blank">RosaNegra</a></td></tr>
+<tr><td>Cancún</td><td><a href="https://www.google.com/maps/search/Puerto+Juarez+Cancun" target="_blank">Puerto Juárez</a> · <a href="https://www.google.com/maps/search/Walmart+Cancun" target="_blank">Walmart Cancún</a> · <a href="https://www.viator.com/tours/Isla-Mujeres/Golf-Cart-Rental-in-Isla-Mujeres/d5522-126344P1" target="_blank">Carrinho de golfe</a> · <a href="https://www.google.com/maps/search/Cancun+International+Airport" target="_blank">Aeroporto CUN</a></td></tr>
+<tr><td>Hotéis</td><td><a href="https://www.google.com/travel/hotels" target="_blank">Google Travel Hotéis</a> · <a href="https://www.decolar.com/hoteis/" target="_blank">Decolar Hotéis</a></td></tr>
+<tr><td>Ingressos e reservas</td><td><a href="https://www.xcaret.com/pt/" target="_blank">Xcaret</a> · <a href="https://www.cocobongo.com/" target="_blank">Coco Bongo</a> · <a href="https://www.ultramarferry.com/" target="_blank">Ultramar Ferry</a> · <a href="https://www.mrsanchos.com/" target="_blank">Mr. Sanchos</a> · <a href="https://tabootulum.com/" target="_blank">Taboo Tulum</a> · <a href="https://rosanegra.com.mx/" target="_blank">RosaNegra</a></td></tr>
+</tbody>
+</table>
+
+<h2>7. CHECKLIST INTELIGENTE</h2>
+
+<table class="check-table">
+<thead>
+<tr>
+<th style="width:24%">Momento</th>
+<th>Itens acionáveis</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Antes de comprar/fechar</td>
+<td>
+<label class="smart-check"><input type="checkbox"> Confirmar passaporte válido</label>
+<label class="smart-check"><input type="checkbox"> Confirmar regra de entrada no México</label>
+<label class="smart-check"><input type="checkbox"> Confirmar visto americano válido, se for usar como isenção</label>
+<label class="smart-check"><input type="checkbox"> Conferir seguro viagem</label>
+<label class="smart-check"><input type="checkbox"> Conferir limite do cartão internacional</label>
+</td>
+</tr>
+
+<tr>
+<td>Voos e documentação</td>
+<td>
+<label class="smart-check"><input type="checkbox"> Comprar passagem multidestino GRU → MEX → CUN → GRU</label>
+<label class="smart-check"><input type="checkbox"> Confirmar 1 mala despachada por pessoa</label>
+<label class="smart-check"><input type="checkbox"> Salvar bilhetes offline</label>
+<label class="smart-check"><input type="checkbox"> Separar passaporte físico + cópia digital</label>
+<label class="smart-check"><input type="checkbox"> Fazer check-in online quando abrir</label>
+</td>
+</tr>
+
+<tr>
+<td>Hotéis</td>
+<td>
+<label class="smart-check"><input type="checkbox"> Reservar hotel Cidade do México</label>
+<label class="smart-check"><input type="checkbox"> Reservar hotel Playa del Carmen</label>
+<label class="smart-check"><input type="checkbox"> Reservar hotel Cancún</label>
+<label class="smart-check"><input type="checkbox"> Conferir horários de check-in/check-out</label>
+<label class="smart-check"><input type="checkbox"> Salvar endereços dos hotéis no Google Maps</label>
+</td>
+</tr>
+
+<tr>
+<td>Dinheiro e câmbio</td>
+<td>
+<label class="smart-check"><input type="checkbox"> Comprar dólar para reserva principal</label>
+<label class="smart-check"><input type="checkbox"> Comprar pesos mexicanos para gastos locais</label>
+<label class="smart-check"><input type="checkbox"> Definir teto de gastos por pessoa</label>
+<label class="smart-check"><input type="checkbox"> Separar dinheiro para gorjetas, ferry, tacos e mercado</label>
+</td>
+</tr>
+
+<tr>
+<td>Ingressos e reservas</td>
+<td>
+<label class="smart-check"><input type="checkbox"> Comprar Xplor</label>
+<label class="smart-check"><input type="checkbox"> Comprar Xcaret, se mantiver no roteiro</label>
+<label class="smart-check"><input type="checkbox"> Comprar/planejar ferry Cozumel</label>
+<label class="smart-check"><input type="checkbox"> Comprar/planejar ferry Isla Mujeres</label>
+<label class="smart-check"><input type="checkbox"> Reservar Coco Bongo, se decidir fazer</label>
+<label class="smart-check"><input type="checkbox"> Reservar beach club em Tulum, se necessário</label>
+</td>
+</tr>
+
+<tr>
+<td>Logística local</td>
+<td>
+<label class="smart-check"><input type="checkbox"> Salvar rotas dos hotéis para aeroportos</label>
+<label class="smart-check"><input type="checkbox"> Salvar rotas para Xplor/Xcaret</label>
+<label class="smart-check"><input type="checkbox"> Salvar Puerto Juárez para Isla Mujeres</label>
+<label class="smart-check"><input type="checkbox"> Planejar aluguel de carrinho em Isla Mujeres</label>
+<label class="smart-check"><input type="checkbox"> Separar dia/horário para Walmart Cancún</label>
+</td>
+</tr>
+
+<tr>
+<td>Compras inteligentes</td>
+<td>
+<label class="smart-check"><input type="checkbox"> Definir se vai comprar tequila/mezcal</label>
+<label class="smart-check"><input type="checkbox"> Listar doces/snacks mexicanos para trazer</label>
+<label class="smart-check"><input type="checkbox"> Comparar preço de perfumes/cosméticos antes de comprar</label>
+<label class="smart-check"><input type="checkbox"> Evitar eletrônicos se não estiverem próximos do preço EUA/Paraguai</label>
+<label class="smart-check"><input type="checkbox"> Reservar espaço na mala para compras</label>
+</td>
+</tr>
+
+<tr>
+<td>Última semana antes da viagem</td>
+<td>
+<label class="smart-check"><input type="checkbox"> Confirmar reservas dos hotéis</label>
+<label class="smart-check"><input type="checkbox"> Confirmar horários dos voos</label>
+<label class="smart-check"><input type="checkbox"> Baixar mapas offline</label>
+<label class="smart-check"><input type="checkbox"> Salvar PDFs/comprovantes offline</label>
+<label class="smart-check"><input type="checkbox"> Conferir clima e ajustar mala</label>
+</td>
+</tr>
+
+</tbody>
+</table>
+
+<h2>8. FOTOS OFICIAIS</h2>
+
+<table class="small">
+<thead>
+<tr>
+<th style="width:32%">Lugar</th>
+<th>Referência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.xcaret.com/pt/" target="_blank">Xcaret</a></td>
+<td>Fotos oficiais do parque e atrações.</td>
+</tr>
+
+<tr>
+<td><a href="https://www.xplor.travel/pt/" target="_blank">Xplor</a></td>
+<td>Fotos oficiais de aventura e ATV.</td>
+</tr>
+
+<tr>
+<td><a href="https://tabootulum.com/" target="_blank">Taboo Tulum</a></td>
+<td>Galeria oficial do beach club.</td>
+</tr>
+
+<tr>
+<td><a href="https://rosanegra.com.mx/" target="_blank">RosaNegra</a></td>
+<td>Galeria oficial do restaurante.</td>
+</tr>
+
+<tr>
+<td><a href="https://www.mrsanchos.com/" target="_blank">Mr. Sanchos</a></td>
+<td>Beach club oficial em Cozumel.</td>
+</tr>
+
+</tbody>
+</table>
+
+</section>
+
+<script>
+if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  window.addEventListener('load', function(){
+    navigator.serviceWorker.register('./service-worker.js').catch(function(){});
+  });
+}
+</script>
+
+
+<script id="live-dashboard-js">
+function fmt(n){return 'R$ '+Number(n||0).toLocaleString('pt-BR',{maximumFractionDigits:0});}
+function recalcLive(){
+  let min=0,max=0,real=0;
+  document.querySelectorAll('#costTable tbody tr').forEach(tr=>{
+    min += Number(tr.querySelector('.min')?.value||0);
+    max += Number(tr.querySelector('.max')?.value||0);
+    real += Number(tr.querySelector('.real')?.value||0);
+  });
+  let checks=[...document.querySelectorAll('#checkTable .checkstatus')];
+  let done=checks.filter(s=>s.value==='Feito').length;
+  document.getElementById('kpiMin').textContent=fmt(min);
+  document.getElementById('kpiMax').textContent=fmt(max);
+  document.getElementById('kpiReal').textContent=fmt(real);
+  document.getElementById('kpiChecklist').textContent=done+'/'+checks.length;
+  let pct=max?Math.min(100,Math.round(real/max*100)):0;
+  document.getElementById('budgetBar').style.width=pct+'%';
+  document.getElementById('budgetText').textContent='Real utilizado: '+fmt(real)+' de '+fmt(max)+' ('+pct+'%)';
+  saveLive();
+}
+function saveLive(){
+  const data={
+    costs:[...document.querySelectorAll('#costTable tbody tr')].map(tr=>[...tr.querySelectorAll('input,select')].map(x=>x.value)),
+    checks:[...document.querySelectorAll('#checkTable tbody tr')].map(tr=>tr.querySelector('select').value),
+    reserves:[...document.querySelectorAll('#reserveTable tbody tr')].map(tr=>[...tr.querySelectorAll('input,select')].map(x=>x.value))
+  };
+  localStorage.setItem('roteiroLiveV2',JSON.stringify(data));
+}
+function loadSavedLive(){
+  try{
+    const data=JSON.parse(localStorage.getItem('roteiroLiveV2')||'{}');
+    if(data.costs) document.querySelectorAll('#costTable tbody tr').forEach((tr,i)=>{[...tr.querySelectorAll('input,select')].forEach((x,j)=>{if(data.costs[i]&&data.costs[i][j]!=null)x.value=data.costs[i][j];});});
+    if(data.checks) document.querySelectorAll('#checkTable tbody tr').forEach((tr,i)=>{let s=tr.querySelector('select'); if(s&&data.checks[i])s.value=data.checks[i];});
+    if(data.reserves) document.querySelectorAll('#reserveTable tbody tr').forEach((tr,i)=>{[...tr.querySelectorAll('input,select')].forEach((x,j)=>{if(data.reserves[i]&&data.reserves[i][j]!=null)x.value=data.reserves[i][j];});});
+  }catch(e){}
+}
+function travelMode(){
+  const now=new Date(), start=new Date('2026-06-06T00:00:00'), end=new Date('2026-06-16T23:59:59');
+  const el=document.getElementById('travelNow'); if(!el)return;
+  if(now<start){el.innerHTML='<b>Pré-viagem:</b> faltam '+Math.ceil((start-now)/86400000)+' dias. Prioridade: reservas, Wise, seguro e passeios.';}
+  else if(now>end){el.innerHTML='<b>Viagem concluída:</b> conferir gastos reais e aprendizados.';}
+  else{const dd=String(now.getDate()).padStart(2,'0')+'/'+String(now.getMonth()+1).padStart(2,'0'); el.innerHTML='<b>Modo viagem real:</b> hoje é '+dd+'. O bloco do dia será destacado se existir.'; document.querySelectorAll('details.day-block summary').forEach(s=>{if(s.textContent.includes(dd)){s.parentElement.classList.add('current-day-highlight');s.parentElement.open=true;}});}
+}
+async function loadLiveData(){
+  try{let u=await fetch('https://api.frankfurter.app/latest?from=USD&to=BRL').then(r=>r.json());document.getElementById('usdRate').textContent='R$ '+u.rates.BRL.toFixed(2);}catch(e){document.getElementById('usdRate').textContent='offline';}
+  try{let m=await fetch('https://api.frankfurter.app/latest?from=MXN&to=BRL').then(r=>r.json());document.getElementById('mxnRate').textContent='R$ '+m.rates.BRL.toFixed(2);}catch(e){document.getElementById('mxnRate').textContent='offline';}
+  try{let c=await fetch('https://api.open-meteo.com/v1/forecast?latitude=21.1619&longitude=-86.8515&current=temperature_2m,precipitation').then(r=>r.json());document.getElementById('weatherCancun').textContent=Math.round(c.current.temperature_2m)+'°C • chuva '+c.current.precipitation+'mm';}catch(e){document.getElementById('weatherCancun').textContent='offline';}
+  try{let p=await fetch('https://api.open-meteo.com/v1/forecast?latitude=20.6296&longitude=-87.0739&current=temperature_2m,precipitation').then(r=>r.json());document.getElementById('weatherPlaya').textContent=Math.round(p.current.temperature_2m)+'°C • chuva '+p.current.precipitation+'mm';}catch(e){document.getElementById('weatherPlaya').textContent='offline';}
+}
+function saveSheetUrl(){let u=document.getElementById('sheetUrlInput').value;localStorage.setItem('sheetUrlRoteiro',u);document.getElementById('sheetFrame').src=u||'about:blank';}
+document.addEventListener('DOMContentLoaded',()=>{
+  loadSavedLive();
+  document.querySelectorAll('#painel-vivo input,#painel-vivo select').forEach(x=>x.addEventListener('input',recalcLive));
+  const u=localStorage.getItem('sheetUrlRoteiro'); if(u){document.getElementById('sheetUrlInput').value=u;document.getElementById('sheetFrame').src=u;}
+  recalcLive(); travelMode(); loadLiveData();
+});
+</script>
+
+</body></html>
