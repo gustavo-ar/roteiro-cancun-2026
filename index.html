@@ -991,23 +991,219 @@ table td{
 </div>
 <div class="bar"><div id="budgetBar"></div></div>
 <p id="budgetText" class="small">—</p>
+
+<div class="kpi-grid" id="paymentKpis">
+<div class="kpi"><span>Gustavo pagou</span><strong id="kpiGustavo">—</strong></div>
+<div class="kpi"><span>Edineia pagou</span><strong id="kpiEdineia">—</strong></div>
+<div class="kpi"><span>Dividido/cada um</span><strong id="kpiDividido">—</strong></div>
+<div class="kpi"><span>Próx. fim parcela</span><strong id="kpiLastInstallment">—</strong></div>
+</div>
+
 </div>
 
 <div class="live-section">
-<h2>Custos vivos</h2>
-<table class="shopping-table" id="costTable"><thead><tr><th>Categoria</th><th>Item</th><th>Mín.</th><th>Máx.</th><th>Real</th><th>Status</th></tr></thead><tbody><tr><td>Voos</td><td>GRU → CUN via Panamá</td><td><input class="min" type="number" value="3500"></td><td><input class="max" type="number" value="4000"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
-<tr><td>Hotel</td><td>Playa 06–11/06</td><td><input class="min" type="number" value="3500"></td><td><input class="max" type="number" value="6000"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
-<tr><td>Hotel</td><td>Cancún 11–16/06</td><td><input class="min" type="number" value="2100"></td><td><input class="max" type="number" value="3200"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
-<tr><td>Passeio</td><td>Xcaret</td><td><input class="min" type="number" value="600"></td><td><input class="max" type="number" value="950"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
-<tr><td>Passeio</td><td>Cozumel + snorkel</td><td><input class="min" type="number" value="700"></td><td><input class="max" type="number" value="1200"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
-<tr><td>Passeio</td><td>Catamarã Isla Mujeres</td><td><input class="min" type="number" value="300"></td><td><input class="max" type="number" value="680"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
-<tr><td>Passeio</td><td>Ferry Isla Mujeres</td><td><input class="min" type="number" value="80"></td><td><input class="max" type="number" value="160"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
-<tr><td>Passeio</td><td>Lancha transparente</td><td><input class="min" type="number" value="140"></td><td><input class="max" type="number" value="260"></td><td><input class="real" type="number" value=""></td><td><select><option >Pendente</option><option >Reservado</option><option >Pago</option><option selected>Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
-<tr><td>Passeio</td><td>Coco Bongo</td><td><input class="min" type="number" value="400"></td><td><input class="max" type="number" value="680"></td><td><input class="real" type="number" value=""></td><td><select><option >Pendente</option><option >Reservado</option><option >Pago</option><option selected>Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
-<tr><td>Compras</td><td>Walmart/snacks/farmácia</td><td><input class="min" type="number" value="800"></td><td><input class="max" type="number" value="1800"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
-<tr><td>Alimentação</td><td>Restaurantes e lanches</td><td><input class="min" type="number" value="1500"></td><td><input class="max" type="number" value="3000"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
-<tr><td>Transporte</td><td>Uber/ADO/transfer</td><td><input class="min" type="number" value="700"></td><td><input class="max" type="number" value="1500"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr>
-<tr><td>Reserva</td><td>Margem/emergência</td><td><input class="min" type="number" value="1000"></td><td><input class="max" type="number" value="2500"></td><td><input class="real" type="number" value=""></td><td><select><option selected>Pendente</option><option >Reservado</option><option >Pago</option><option >Opcional</option><option >Cancelado</option><option >Feito</option><option >Em andamento</option><option >Não vai fazer</option></select></td></tr></tbody></table>
+<h2>Custos vivos</h2><p class="small"><b>Meio de pagamento e divisão:</b> selecione Pix, cartão à vista, cartão parcelado, Wise, quem pagou, data e parcelas. O painel calcula valor da parcela e último mês automaticamente.</p>
+
+<table class="shopping-table" id="costTable">
+<thead><tr>
+<th>Categoria</th><th>Item</th><th>Mín.</th><th>Máx.</th><th>Real</th><th>Status</th>
+<th>Meio</th><th>Quem pagou</th><th>Data pagto.</th><th>Parcelas</th><th>Valor parcela</th><th>Última parcela</th>
+</tr></thead><tbody>
+
+<tr>
+<td>Voos</td><td>GRU → CUN via Panamá</td>
+<td><input class="min" type="number" value="3500"></td>
+<td><input class="max" type="number" value="4000"></td>
+<td><input class="real" type="number" value=""></td>
+<td><select><option selected>Pendente</option><option>Reservado</option><option>Pago</option><option>Parcial</option><option>Opcional</option><option>Cancelado</option></select></td>
+<td><select class="paymethod"><option></option><option>Pix</option><option>Cartão à vista</option><option>Cartão parcelado</option><option>Wise</option><option>Dinheiro</option><option>Milhas/Pontos</option><option>Outro</option></select></td>
+<td><select class="payer"><option></option><option>Gustavo</option><option>Edineia</option><option>Cada um pagou o seu</option><option>Dividido 50/50</option><option>A definir</option></select></td>
+<td><input class="paydate" type="date"></td>
+<td><select class="installments"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></td>
+<td><input class="installmentValue" type="number" readonly></td>
+<td><input class="lastInstallment" type="text" readonly></td>
+</tr>
+
+
+<tr>
+<td>Hotel</td><td>Playa del Carmen 06–11/06</td>
+<td><input class="min" type="number" value="3500"></td>
+<td><input class="max" type="number" value="6000"></td>
+<td><input class="real" type="number" value=""></td>
+<td><select><option selected>Pendente</option><option>Reservado</option><option>Pago</option><option>Parcial</option><option>Opcional</option><option>Cancelado</option></select></td>
+<td><select class="paymethod"><option></option><option>Pix</option><option>Cartão à vista</option><option>Cartão parcelado</option><option>Wise</option><option>Dinheiro</option><option>Milhas/Pontos</option><option>Outro</option></select></td>
+<td><select class="payer"><option></option><option>Gustavo</option><option>Edineia</option><option>Cada um pagou o seu</option><option>Dividido 50/50</option><option>A definir</option></select></td>
+<td><input class="paydate" type="date"></td>
+<td><select class="installments"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></td>
+<td><input class="installmentValue" type="number" readonly></td>
+<td><input class="lastInstallment" type="text" readonly></td>
+</tr>
+
+
+<tr>
+<td>Hotel</td><td>Cancún 11–16/06</td>
+<td><input class="min" type="number" value="2100"></td>
+<td><input class="max" type="number" value="3200"></td>
+<td><input class="real" type="number" value=""></td>
+<td><select><option selected>Pendente</option><option>Reservado</option><option>Pago</option><option>Parcial</option><option>Opcional</option><option>Cancelado</option></select></td>
+<td><select class="paymethod"><option></option><option>Pix</option><option>Cartão à vista</option><option>Cartão parcelado</option><option>Wise</option><option>Dinheiro</option><option>Milhas/Pontos</option><option>Outro</option></select></td>
+<td><select class="payer"><option></option><option>Gustavo</option><option>Edineia</option><option>Cada um pagou o seu</option><option>Dividido 50/50</option><option>A definir</option></select></td>
+<td><input class="paydate" type="date"></td>
+<td><select class="installments"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></td>
+<td><input class="installmentValue" type="number" readonly></td>
+<td><input class="lastInstallment" type="text" readonly></td>
+</tr>
+
+
+<tr>
+<td>Passeio</td><td>Xcaret</td>
+<td><input class="min" type="number" value="600"></td>
+<td><input class="max" type="number" value="950"></td>
+<td><input class="real" type="number" value=""></td>
+<td><select><option selected>Pendente</option><option>Reservado</option><option>Pago</option><option>Parcial</option><option>Opcional</option><option>Cancelado</option></select></td>
+<td><select class="paymethod"><option></option><option>Pix</option><option>Cartão à vista</option><option>Cartão parcelado</option><option>Wise</option><option>Dinheiro</option><option>Milhas/Pontos</option><option>Outro</option></select></td>
+<td><select class="payer"><option></option><option>Gustavo</option><option>Edineia</option><option>Cada um pagou o seu</option><option>Dividido 50/50</option><option>A definir</option></select></td>
+<td><input class="paydate" type="date"></td>
+<td><select class="installments"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></td>
+<td><input class="installmentValue" type="number" readonly></td>
+<td><input class="lastInstallment" type="text" readonly></td>
+</tr>
+
+
+<tr>
+<td>Passeio</td><td>Cozumel + snorkel</td>
+<td><input class="min" type="number" value="700"></td>
+<td><input class="max" type="number" value="1200"></td>
+<td><input class="real" type="number" value=""></td>
+<td><select><option selected>Pendente</option><option>Reservado</option><option>Pago</option><option>Parcial</option><option>Opcional</option><option>Cancelado</option></select></td>
+<td><select class="paymethod"><option></option><option>Pix</option><option>Cartão à vista</option><option>Cartão parcelado</option><option>Wise</option><option>Dinheiro</option><option>Milhas/Pontos</option><option>Outro</option></select></td>
+<td><select class="payer"><option></option><option>Gustavo</option><option>Edineia</option><option>Cada um pagou o seu</option><option>Dividido 50/50</option><option>A definir</option></select></td>
+<td><input class="paydate" type="date"></td>
+<td><select class="installments"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></td>
+<td><input class="installmentValue" type="number" readonly></td>
+<td><input class="lastInstallment" type="text" readonly></td>
+</tr>
+
+
+<tr>
+<td>Passeio</td><td>Catamarã Isla Mujeres</td>
+<td><input class="min" type="number" value="300"></td>
+<td><input class="max" type="number" value="680"></td>
+<td><input class="real" type="number" value=""></td>
+<td><select><option selected>Pendente</option><option>Reservado</option><option>Pago</option><option>Parcial</option><option>Opcional</option><option>Cancelado</option></select></td>
+<td><select class="paymethod"><option></option><option>Pix</option><option>Cartão à vista</option><option>Cartão parcelado</option><option>Wise</option><option>Dinheiro</option><option>Milhas/Pontos</option><option>Outro</option></select></td>
+<td><select class="payer"><option></option><option>Gustavo</option><option>Edineia</option><option>Cada um pagou o seu</option><option>Dividido 50/50</option><option>A definir</option></select></td>
+<td><input class="paydate" type="date"></td>
+<td><select class="installments"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></td>
+<td><input class="installmentValue" type="number" readonly></td>
+<td><input class="lastInstallment" type="text" readonly></td>
+</tr>
+
+
+<tr>
+<td>Passeio</td><td>Ferry Isla Mujeres</td>
+<td><input class="min" type="number" value="80"></td>
+<td><input class="max" type="number" value="160"></td>
+<td><input class="real" type="number" value=""></td>
+<td><select><option selected>Pendente</option><option>Reservado</option><option>Pago</option><option>Parcial</option><option>Opcional</option><option>Cancelado</option></select></td>
+<td><select class="paymethod"><option></option><option>Pix</option><option>Cartão à vista</option><option>Cartão parcelado</option><option>Wise</option><option>Dinheiro</option><option>Milhas/Pontos</option><option>Outro</option></select></td>
+<td><select class="payer"><option></option><option>Gustavo</option><option>Edineia</option><option>Cada um pagou o seu</option><option>Dividido 50/50</option><option>A definir</option></select></td>
+<td><input class="paydate" type="date"></td>
+<td><select class="installments"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></td>
+<td><input class="installmentValue" type="number" readonly></td>
+<td><input class="lastInstallment" type="text" readonly></td>
+</tr>
+
+
+<tr>
+<td>Passeio</td><td>Lancha transparente</td>
+<td><input class="min" type="number" value="140"></td>
+<td><input class="max" type="number" value="260"></td>
+<td><input class="real" type="number" value=""></td>
+<td><select><option>Pendente</option><option>Reservado</option><option>Pago</option><option>Parcial</option><option selected>Opcional</option><option>Cancelado</option></select></td>
+<td><select class="paymethod"><option></option><option>Pix</option><option>Cartão à vista</option><option>Cartão parcelado</option><option>Wise</option><option>Dinheiro</option><option>Milhas/Pontos</option><option>Outro</option></select></td>
+<td><select class="payer"><option></option><option>Gustavo</option><option>Edineia</option><option>Cada um pagou o seu</option><option>Dividido 50/50</option><option>A definir</option></select></td>
+<td><input class="paydate" type="date"></td>
+<td><select class="installments"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></td>
+<td><input class="installmentValue" type="number" readonly></td>
+<td><input class="lastInstallment" type="text" readonly></td>
+</tr>
+
+
+<tr>
+<td>Passeio</td><td>Coco Bongo</td>
+<td><input class="min" type="number" value="400"></td>
+<td><input class="max" type="number" value="680"></td>
+<td><input class="real" type="number" value=""></td>
+<td><select><option>Pendente</option><option>Reservado</option><option>Pago</option><option>Parcial</option><option selected>Opcional</option><option>Cancelado</option></select></td>
+<td><select class="paymethod"><option></option><option>Pix</option><option>Cartão à vista</option><option>Cartão parcelado</option><option>Wise</option><option>Dinheiro</option><option>Milhas/Pontos</option><option>Outro</option></select></td>
+<td><select class="payer"><option></option><option>Gustavo</option><option>Edineia</option><option>Cada um pagou o seu</option><option>Dividido 50/50</option><option>A definir</option></select></td>
+<td><input class="paydate" type="date"></td>
+<td><select class="installments"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></td>
+<td><input class="installmentValue" type="number" readonly></td>
+<td><input class="lastInstallment" type="text" readonly></td>
+</tr>
+
+
+<tr>
+<td>Compras</td><td>Walmart/snacks/farmácia</td>
+<td><input class="min" type="number" value="800"></td>
+<td><input class="max" type="number" value="1800"></td>
+<td><input class="real" type="number" value=""></td>
+<td><select><option selected>Pendente</option><option>Reservado</option><option>Pago</option><option>Parcial</option><option>Opcional</option><option>Cancelado</option></select></td>
+<td><select class="paymethod"><option></option><option>Pix</option><option>Cartão à vista</option><option>Cartão parcelado</option><option>Wise</option><option>Dinheiro</option><option>Milhas/Pontos</option><option>Outro</option></select></td>
+<td><select class="payer"><option></option><option>Gustavo</option><option>Edineia</option><option>Cada um pagou o seu</option><option>Dividido 50/50</option><option>A definir</option></select></td>
+<td><input class="paydate" type="date"></td>
+<td><select class="installments"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></td>
+<td><input class="installmentValue" type="number" readonly></td>
+<td><input class="lastInstallment" type="text" readonly></td>
+</tr>
+
+
+<tr>
+<td>Alimentação</td><td>Restaurantes e lanches</td>
+<td><input class="min" type="number" value="1500"></td>
+<td><input class="max" type="number" value="3000"></td>
+<td><input class="real" type="number" value=""></td>
+<td><select><option selected>Pendente</option><option>Reservado</option><option>Pago</option><option>Parcial</option><option>Opcional</option><option>Cancelado</option></select></td>
+<td><select class="paymethod"><option></option><option>Pix</option><option>Cartão à vista</option><option>Cartão parcelado</option><option>Wise</option><option>Dinheiro</option><option>Milhas/Pontos</option><option>Outro</option></select></td>
+<td><select class="payer"><option></option><option>Gustavo</option><option>Edineia</option><option>Cada um pagou o seu</option><option>Dividido 50/50</option><option>A definir</option></select></td>
+<td><input class="paydate" type="date"></td>
+<td><select class="installments"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></td>
+<td><input class="installmentValue" type="number" readonly></td>
+<td><input class="lastInstallment" type="text" readonly></td>
+</tr>
+
+
+<tr>
+<td>Transporte</td><td>Uber/ADO/transfer</td>
+<td><input class="min" type="number" value="700"></td>
+<td><input class="max" type="number" value="1500"></td>
+<td><input class="real" type="number" value=""></td>
+<td><select><option selected>Pendente</option><option>Reservado</option><option>Pago</option><option>Parcial</option><option>Opcional</option><option>Cancelado</option></select></td>
+<td><select class="paymethod"><option></option><option>Pix</option><option>Cartão à vista</option><option>Cartão parcelado</option><option>Wise</option><option>Dinheiro</option><option>Milhas/Pontos</option><option>Outro</option></select></td>
+<td><select class="payer"><option></option><option>Gustavo</option><option>Edineia</option><option>Cada um pagou o seu</option><option>Dividido 50/50</option><option>A definir</option></select></td>
+<td><input class="paydate" type="date"></td>
+<td><select class="installments"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></td>
+<td><input class="installmentValue" type="number" readonly></td>
+<td><input class="lastInstallment" type="text" readonly></td>
+</tr>
+
+
+<tr>
+<td>Reserva</td><td>Margem/emergência</td>
+<td><input class="min" type="number" value="1000"></td>
+<td><input class="max" type="number" value="2500"></td>
+<td><input class="real" type="number" value=""></td>
+<td><select><option selected>Pendente</option><option>Reservado</option><option>Pago</option><option>Parcial</option><option>Opcional</option><option>Cancelado</option></select></td>
+<td><select class="paymethod"><option></option><option>Pix</option><option>Cartão à vista</option><option>Cartão parcelado</option><option>Wise</option><option>Dinheiro</option><option>Milhas/Pontos</option><option>Outro</option></select></td>
+<td><select class="payer"><option></option><option>Gustavo</option><option>Edineia</option><option>Cada um pagou o seu</option><option>Dividido 50/50</option><option>A definir</option></select></td>
+<td><input class="paydate" type="date"></td>
+<td><select class="installments"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></td>
+<td><input class="installmentValue" type="number" readonly></td>
+<td><input class="lastInstallment" type="text" readonly></td>
+</tr>
+</tbody></table>
 </div>
 
 <div class="live-section">
@@ -1071,7 +1267,7 @@ table td{
 <h2>Google Sheets embutido</h2>
 <p>Cole aqui o link de incorporação publicado do Google Sheets. Depois de salvo, ele aparece dentro do roteiro.</p>
 <input id="sheetUrlInput" placeholder="Cole o link iframe/publicado do Google Sheets" style="width:100%;padding:8px;border:1px solid #D1D5DB;border-radius:8px;">
-<div class="action-row"><button onclick="saveSheetUrl()">Salvar link do Sheets</button><a href="painel_vivo_viagem_playa_cancun_2026.xlsx" target="_blank">Abrir Excel</a></div>
+<div class="action-row"><button onclick="saveSheetUrl()">Salvar link do Sheets</button><a href="painel_vivo_viagem_playa_cancun_2026_pagamentos.xlsx" target="_blank">Abrir Excel</a></div>
 <iframe id="sheetFrame" src="about:blank" title="Google Sheets vivo"></iframe>
 </div>
 </section>
@@ -1721,7 +1917,7 @@ Referência complementar com foco em câmbio, alimentação, transporte, parques
 <tr>
 <td>Planilha viva</td>
 <td>Custos, reservas e checklist em tempo real.</td>
-<td><a href="painel_vivo_viagem_playa_cancun_2026.xlsx" target="_blank">Abrir Excel</a></td>
+<td><a href="painel_vivo_viagem_playa_cancun_2026_pagamentos.xlsx" target="_blank">Abrir Excel</a></td>
 </tr>
 <tr>
 <td>Google Sheets</td>
@@ -1901,25 +2097,52 @@ if ('serviceWorker' in navigator && location.protocol !== 'file:') {
 
 
 <script id="live-dashboard-js">
+
 function fmt(n){return 'R$ '+Number(n||0).toLocaleString('pt-BR',{maximumFractionDigits:0});}
+function addMonths(dateStr, months){
+  if(!dateStr) return '';
+  const d = new Date(dateStr+'T00:00:00');
+  if(isNaN(d)) return '';
+  d.setMonth(d.getMonth()+Number(months||1)-1);
+  return d.toLocaleDateString('pt-BR',{month:'short',year:'2-digit'});
+}
 function recalcLive(){
-  let min=0,max=0,real=0;
+  let min=0,max=0,real=0,gustavo=0,edineia=0,dividido=0,lastDates=[];
   document.querySelectorAll('#costTable tbody tr').forEach(tr=>{
-    min += Number(tr.querySelector('.min')?.value||0);
-    max += Number(tr.querySelector('.max')?.value||0);
-    real += Number(tr.querySelector('.real')?.value||0);
+    const minv=Number(tr.querySelector('.min')?.value||0);
+    const maxv=Number(tr.querySelector('.max')?.value||0);
+    const realv=Number(tr.querySelector('.real')?.value||0);
+    const payer=tr.querySelector('.payer')?.value||'';
+    const parcels=Number(tr.querySelector('.installments')?.value||1);
+    const paydate=tr.querySelector('.paydate')?.value||'';
+    const instValue=tr.querySelector('.installmentValue');
+    const lastInst=tr.querySelector('.lastInstallment');
+    min+=minv; max+=maxv; real+=realv;
+    if(payer==='Gustavo') gustavo+=realv;
+    if(payer==='Edineia') edineia+=realv;
+    if(payer==='Cada um pagou o seu' || payer==='Dividido 50/50') dividido+=realv;
+    if(instValue) instValue.value = realv && parcels ? Math.round(realv/parcels) : '';
+    if(lastInst) {
+      const label=addMonths(paydate,parcels);
+      lastInst.value=label;
+      if(label && paydate){ 
+        const d=new Date(paydate+'T00:00:00'); d.setMonth(d.getMonth()+parcels-1); lastDates.push(d);
+      }
+    }
   });
   let checks=[...document.querySelectorAll('#checkTable .checkstatus')];
   let done=checks.filter(s=>s.value==='Feito').length;
-  document.getElementById('kpiMin').textContent=fmt(min);
-  document.getElementById('kpiMax').textContent=fmt(max);
-  document.getElementById('kpiReal').textContent=fmt(real);
-  document.getElementById('kpiChecklist').textContent=done+'/'+checks.length;
+  const set=(id,val)=>{const e=document.getElementById(id); if(e)e.textContent=val;}
+  set('kpiMin',fmt(min)); set('kpiMax',fmt(max)); set('kpiReal',fmt(real)); set('kpiChecklist',done+'/'+checks.length);
+  set('kpiGustavo',fmt(gustavo)); set('kpiEdineia',fmt(edineia)); set('kpiDividido',fmt(dividido));
+  if(lastDates.length){lastDates.sort((a,b)=>b-a); set('kpiLastInstallment',lastDates[0].toLocaleDateString('pt-BR',{month:'short',year:'2-digit'}));}
+  else set('kpiLastInstallment','—');
   let pct=max?Math.min(100,Math.round(real/max*100)):0;
-  document.getElementById('budgetBar').style.width=pct+'%';
-  document.getElementById('budgetText').textContent='Real utilizado: '+fmt(real)+' de '+fmt(max)+' ('+pct+'%)';
+  const bar=document.getElementById('budgetBar'); if(bar)bar.style.width=pct+'%';
+  const bt=document.getElementById('budgetText'); if(bt)bt.textContent='Real utilizado: '+fmt(real)+' de '+fmt(max)+' ('+pct+'%)';
   saveLive();
 }
+
 function saveLive(){
   const data={
     costs:[...document.querySelectorAll('#costTable tbody tr')].map(tr=>[...tr.querySelectorAll('input,select')].map(x=>x.value)),
@@ -1959,5 +2182,3 @@ document.addEventListener('DOMContentLoaded',()=>{
 </script>
 
 </body></html>
-
-<!-- redeploy -->
