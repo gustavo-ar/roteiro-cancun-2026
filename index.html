@@ -925,6 +925,16 @@ table td{
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Roteiro Cancún 2026">
 
+
+<style id="layout-v3">
+.live-v2 .shopping-table{font-size:10px!important;table-layout:auto!important}
+.live-v2 .shopping-table th,.live-v2 .shopping-table td{padding:7px 6px!important;vertical-align:middle!important}
+.live-v2 .shopping-table input,.live-v2 .shopping-table select{min-width:95px!important;font-size:10px!important;padding:6px!important}
+.live-v2 .shopping-table td:nth-child(2){min-width:220px}
+.live-v2 .live-section{overflow-x:auto}
+.live-v2 .kpi-grid{grid-template-columns:repeat(4,minmax(140px,1fr))!important}
+</style>
+
 </head><body><section class="page">
 <h1>RESUMO DA VIAGEM</h1>
 
@@ -979,10 +989,27 @@ table td{
 </section>
 
 <section class="page live-v2" id="painel-vivo">
-<h1>PAINEL VIVO DA VIAGEM</h1>
+<h1>PAINEL DA VIAGEM</h1>
 <div class="panel-box">
-<p><b>Agora é autocontido:</b> o painel já aparece preenchido no HTML e recalcula no navegador. Ele salva alterações localmente no seu aparelho. Para Google Sheets em tempo real, cole o link publicado no campo da seção Sheets.</p>
+<p><b></p>
 <div id="travelNow" class="panel-box">Modo viagem carregando...</div>
+<div class="panel-box">
+<b>Melhor encaixe do dia extra:</b> Cancún.<br><br>
+O melhor cenário é:
+<ul>
+<li>Playa del Carmen → 05/06 até 10/06</li>
+<li>Cancún → 11/06 até 16/06</li>
+</ul>
+O dia 15/06 fica como:
+<ul>
+<li>buffer climático;</li>
+<li>descanso real;</li>
+<li>compras/Walmart;</li>
+<li>praia leve;</li>
+<li>redução de perrengue antes do voo.</li>
+</ul>
+</div>
+
 <div class="kpi-grid">
 <div class="kpi"><span>Total mín.</span><strong id="kpiMin">—</strong></div>
 <div class="kpi"><span>Total máx.</span><strong id="kpiMax">—</strong></div>
@@ -1041,7 +1068,7 @@ table td{
 
 
 <tr>
-<td>Hotel</td><td>Cancún 11–16/06</td>
+<td>Hotel</td><td>Cancún 10–16/06</td>
 <td><input class="min" type="number" value="2100"></td>
 <td><input class="max" type="number" value="3200"></td>
 <td><input class="real" type="number" value=""></td>
@@ -1237,8 +1264,8 @@ table td{
 <div class="live-section">
 <h2>Câmbio e clima</h2>
 <div class="kpi-grid">
-<div class="kpi"><span>USD → BRL</span><strong id="usdRate">carregar</strong></div>
-<div class="kpi"><span>MXN → BRL</span><strong id="mxnRate">carregar</strong></div>
+<div class="kpi"><span>USD → BRL (online)</span><strong id="usdRate">carregar</strong></div>
+<div class="kpi"><span>MXN → BRL (online)</span><strong id="mxnRate">carregar</strong></div>
 <div class="kpi"><span>Cancún</span><strong id="weatherCancun">carregar</strong></div>
 <div class="kpi"><span>Playa</span><strong id="weatherPlaya">carregar</strong></div>
 </div>
@@ -1264,7 +1291,7 @@ table td{
 </div>
 
 <div class="live-section">
-<h2>Google Sheets embutido</h2>
+<h2>Google Sheets sincronizado</h2><p class='small'>Opcional. Serve para sincronizar gastos/checklists entre iPhone e notebook em tempo real.</p>
 <p>Cole aqui o link de incorporação publicado do Google Sheets. Depois de salvo, ele aparece dentro do roteiro.</p>
 <input id="sheetUrlInput" placeholder="Cole o link iframe/publicado do Google Sheets" style="width:100%;padding:8px;border:1px solid #D1D5DB;border-radius:8px;">
 <div class="action-row"><button onclick="saveSheetUrl()">Salvar link do Sheets</button><a href="painel_vivo_viagem_playa_cancun_2026_pagamentos.xlsx" target="_blank">Abrir Excel</a></div>
@@ -2181,4 +2208,24 @@ document.addEventListener('DOMContentLoaded',()=>{
 });
 </script>
 
+
+<section style="padding:20px;border-top:2px solid #ddd;margin-top:30px;">
+<h2>Otimização estratégica aplicada</h2>
+<ul>
+<li><b>Playa del Carmen:</b> 05/06 → 10/06</li>
+<li><b>Cancún:</b> 10/06 → 16/06</li>
+</ul>
+
+<p>O dia extra foi movido estrategicamente para Cancún.</p>
+
+<ul>
+<li>Mais conforto antes do voo;</li>
+<li>Mais buffer climático;</li>
+<li>Mais margem para ferry/catamarã;</li>
+<li>Mais espaço para Walmart/compras;</li>
+<li>Menos perrengue operacional.</li>
+</ul>
+
+<p>O dia 15/06 continua como buffer inteligente / relax / compras.</p>
+</section>
 </body></html>
